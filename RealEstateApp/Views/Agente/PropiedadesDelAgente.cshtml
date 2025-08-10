@@ -1,0 +1,38 @@
+﻿@model List<RealEstateApp.Shared.Dtos.PropiedadDto>
+@{
+    ViewData["Title"] = "Propiedades del Agente";
+    string nombreAgente = ViewBag.NombreAgente as string ?? "Agente";
+}
+
+<div class="container my-5">
+    <h2 class="mb-4">Propiedades de @nombreAgente</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-warning">Este agente no tiene propiedades registradas.</div>
+    }
+    else
+    {
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            @foreach (var propiedad in Model)
+            {
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="@propiedad.ImagenUrl" class="card-img-top" style="height: 200px; object-fit: cover;" />
+                        <div class="card-body">
+                            <h5 class="card-title">@propiedad.Titulo</h5>
+                            <p class="text-muted">@propiedad.TipoVenta - US$ @propiedad.Precio.ToString("N0")</p>
+                            <p>
+                                <i class="bi bi-house-door"></i> @propiedad.Habitaciones Hab |
+                                <i class="bi bi-droplet"></i> @propiedad.Banos Baños |
+                                <i class="bi bi-aspect-ratio"></i> @propiedad.Metros m²
+                            </p>
+                            <a asp-controller="Propiedad" asp-action="Detalle" asp-route-codigo="@propiedad.Codigo"
+                               class="btn btn-outline-primary w-100">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

@@ -1,0 +1,87 @@
+﻿@model RealEstateApp.Shared.Dtos.AgentePerfilDto
+
+@{
+    ViewData["Title"] = "Editar Perfil";
+    Layout = "~/Views/Shared/_LayoutAgente.cshtml";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4"><i class="bi bi-pencil-square"></i> Editar Perfil</h2>
+
+    <div id="mensajeAjax"></div>
+
+    <form id="formEditarPerfil" method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+
+        <input type="hidden" name="Id" value="@Model.Id" />
+
+        <div class="mb-3">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input type="text" name="Nombre" id="Nombre" class="form-control" value="@Model.Nombre" />
+            <span asp-validation-for="Nombre" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="Apellido" class="form-label">Apellido</label>
+            <input type="text" name="Apellido" id="Apellido" class="form-control" value="@Model.Apellido" />
+            <span asp-validation-for="Apellido" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="Telefono" class="form-label">Teléfono</label>
+            <input type="text" name="Telefono" id="Telefono" class="form-control" value="@Model.Telefono" />
+            <span asp-validation-for="Telefono" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="FotoNueva" class="form-label">Subir nueva foto</label>
+            <input type="file" name="FotoNueva" id="FotoNueva" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById('formEditarPerfil');
+            const mensajeDiv = document.getElementById('mensajeAjax');
+
+            form.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                mensajeDiv.innerHTML = "";
+
+                const formData = new FormData(form);
+
+                try {
+                    const response = await fetch('/Agente/EditarPerfil', {
+                        method: 'POST',
+                        body: formData
+                    });
+                    ``
+                    if (!response.ok) {
+                        const errorText = await response.text();
+                        mensajeDiv.innerHTML = `<div class="alert alert-danger">❌ Error del servidor: ${response.status} - ${errorText}</div>`;
+                        return;
+                    }
+
+                    const result = await response.json();
+
+                    if (result.success) {
+                        mensajeDiv.innerHTML = `<div class="alert alert-success">${result.message}</div>`;
+                        setTimeout(() => {
+                            window.location.href = result.redirectUrl;
+                        }, 1500);
+                    } else {
+                        mensajeDiv.innerHTML = `<div class="alert alert-danger">${result.message}</div>`;
+                    }
+                } catch (error) {
+                    mensajeDiv.innerHTML = `<div class="alert alert-danger">❌ Error inesperado: ${error.message}</div>`;
+                }
+            });
+        });
+    </script>
+}

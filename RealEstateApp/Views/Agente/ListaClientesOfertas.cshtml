@@ -1,0 +1,31 @@
+﻿@model IEnumerable<RealEstateApp.Web.ViewModels.SimpleUsuarioVm>
+@{
+    Layout = "~/Views/Shared/_LayoutAgente.cshtml";
+    ViewData["Title"] = "Clientes con ofertas";
+    var propiedadId = (int)ViewBag.PropiedadId;
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="mb-0">💵 Clientes que enviaron ofertas</h3>
+        <a class="btn btn-outline-secondary btn-sm" href="@Url.Action("HomeAgente", "Agente")">← Volver</a>
+    </div>
+
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-light">Aún no hay ofertas registradas para esta propiedad.</div>
+    }
+    else
+    {
+        <div class="list-group">
+            @foreach (var c in Model)
+            {
+                var url = Url.Action("OfertasDelCliente", "Agente", new { propiedadId, clienteId = c.Id });
+                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="@url">
+                    <span>@c.Nombre</span>
+                    <i class="bi bi-chevron-right"></i>
+                </a>
+            }
+        </div>
+    }
+</div>

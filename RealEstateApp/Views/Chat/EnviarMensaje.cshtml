@@ -1,0 +1,34 @@
+﻿@model RealEstateApp.Web.ViewModels.ChatViewModel
+@{
+    ViewData["Title"] = "Chat con " + Model.Agente.Nombre;
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            Chat con @Model.Agente.Nombre
+        </div>
+        <div class="card-body" style="height: 400px; overflow-y: scroll; background-color: #f5f5f5;">
+            @foreach (var mensaje in Model.Mensajes)
+            {
+                var alignment = mensaje.EsEnviadoPorCliente ? "text-end" : "text-start";
+                var bubbleColor = mensaje.EsEnviadoPorCliente ? "bg-primary text-white" : "bg-light text-dark";
+                <div class="mb-2 @alignment">
+                    <div class="d-inline-block p-2 rounded @bubbleColor">
+                        @mensaje.Texto
+                    </div>
+                    <div class="text-muted small">@mensaje.Fecha.ToString("g")</div>
+                </div>
+            }
+        </div>
+        <div class="card-footer">
+            <form asp-controller="Chat" asp-action="EnviarMensaje" method="post">
+                <input type="hidden" name="agenteId" value="@Model.Agente.Id" />
+                <div class="input-group">
+                    <input name="nuevoMensaje" class="form-control" placeholder="Escribe un mensaje..." />
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

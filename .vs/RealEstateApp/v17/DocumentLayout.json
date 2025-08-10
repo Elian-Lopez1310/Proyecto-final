@@ -1,0 +1,1585 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\saasdasdasdada\\RealEstateApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\viewmodels\\filtropropiedadviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\viewmodels\\filtropropiedadviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\cliente\\mispropiedades.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\cliente\\mispropiedades.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\agente\\homeagente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\agente\\homeagente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\cliente\\detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\cliente\\detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\agente\\ofertascliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\agente\\ofertascliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\shared\\_layoutagente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\shared\\_layoutagente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\controllers\\cuentacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\controllers\\cuentacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\controllers\\agentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\controllers\\agentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\controllers\\favoritoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\controllers\\favoritoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|solutionrelative:realestateapp.entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{910741B2-62A3-4B3A-A37E-F3B632316A48}|RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.negocio\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{910741B2-62A3-4B3A-A37E-F3B632316A48}|RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj|solutionrelative:realestateapp.negocio\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30EA4E66-DDEB-4BCA-8D18-6AC6F36F140D}|RealEstateApp.Shared\\RealEstateApp.Shared.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.shared\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30EA4E66-DDEB-4BCA-8D18-6AC6F36F140D}|RealEstateApp.Shared\\RealEstateApp.Shared.csproj|solutionrelative:realestateapp.shared\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30EA4E66-DDEB-4BCA-8D18-6AC6F36F140D}|RealEstateApp.Shared\\RealEstateApp.Shared.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.shared\\dtos\\propiedaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30EA4E66-DDEB-4BCA-8D18-6AC6F36F140D}|RealEstateApp.Shared\\RealEstateApp.Shared.csproj|solutionrelative:realestateapp.shared\\dtos\\propiedaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30EA4E66-DDEB-4BCA-8D18-6AC6F36F140D}|RealEstateApp.Shared\\RealEstateApp.Shared.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.shared\\dtos\\ofertadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30EA4E66-DDEB-4BCA-8D18-6AC6F36F140D}|RealEstateApp.Shared\\RealEstateApp.Shared.csproj|solutionrelative:realestateapp.shared\\dtos\\ofertadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30EA4E66-DDEB-4BCA-8D18-6AC6F36F140D}|RealEstateApp.Shared\\RealEstateApp.Shared.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.shared\\dtos\\mensajedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30EA4E66-DDEB-4BCA-8D18-6AC6F36F140D}|RealEstateApp.Shared\\RealEstateApp.Shared.csproj|solutionrelative:realestateapp.shared\\dtos\\mensajedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30EA4E66-DDEB-4BCA-8D18-6AC6F36F140D}|RealEstateApp.Shared\\RealEstateApp.Shared.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.shared\\dtos\\favoritopropdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30EA4E66-DDEB-4BCA-8D18-6AC6F36F140D}|RealEstateApp.Shared\\RealEstateApp.Shared.csproj|solutionrelative:realestateapp.shared\\dtos\\favoritopropdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30EA4E66-DDEB-4BCA-8D18-6AC6F36F140D}|RealEstateApp.Shared\\RealEstateApp.Shared.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.shared\\dtos\\agenteperfildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30EA4E66-DDEB-4BCA-8D18-6AC6F36F140D}|RealEstateApp.Shared\\RealEstateApp.Shared.csproj|solutionrelative:realestateapp.shared\\dtos\\agenteperfildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30EA4E66-DDEB-4BCA-8D18-6AC6F36F140D}|RealEstateApp.Shared\\RealEstateApp.Shared.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.shared\\dtos\\agentedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30EA4E66-DDEB-4BCA-8D18-6AC6F36F140D}|RealEstateApp.Shared\\RealEstateApp.Shared.csproj|solutionrelative:realestateapp.shared\\dtos\\agentedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{910741B2-62A3-4B3A-A37E-F3B632316A48}|RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.negocio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{910741B2-62A3-4B3A-A37E-F3B632316A48}|RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj|solutionrelative:realestateapp.negocio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{910741B2-62A3-4B3A-A37E-F3B632316A48}|RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.negocio\\servicios\\propiedadservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{910741B2-62A3-4B3A-A37E-F3B632316A48}|RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj|solutionrelative:realestateapp.negocio\\servicios\\propiedadservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{910741B2-62A3-4B3A-A37E-F3B632316A48}|RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.negocio\\servicios\\ipropiedadservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{910741B2-62A3-4B3A-A37E-F3B632316A48}|RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj|solutionrelative:realestateapp.negocio\\servicios\\ipropiedadservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{910741B2-62A3-4B3A-A37E-F3B632316A48}|RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.negocio\\servicios\\iagenteservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{910741B2-62A3-4B3A-A37E-F3B632316A48}|RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj|solutionrelative:realestateapp.negocio\\servicios\\iagenteservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{910741B2-62A3-4B3A-A37E-F3B632316A48}|RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.negocio\\servicios\\agenteservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{910741B2-62A3-4B3A-A37E-F3B632316A48}|RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj|solutionrelative:realestateapp.negocio\\servicios\\agenteservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.entidades\\propiedad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|solutionrelative:realestateapp.entidades\\propiedad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.entidades\\oferta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|solutionrelative:realestateapp.entidades\\oferta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.entidades\\mensajechat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|solutionrelative:realestateapp.entidades\\mensajechat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.entidades\\mejora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|solutionrelative:realestateapp.entidades\\mejora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.entidades\\imagenpropiedad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|solutionrelative:realestateapp.entidades\\imagenpropiedad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.entidades\\favorito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|solutionrelative:realestateapp.entidades\\favorito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.entidades\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|solutionrelative:realestateapp.entidades\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|solutionrelative:realestateapp.entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.entidades\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|solutionrelative:realestateapp.entidades\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.entidades\\chatmensaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|solutionrelative:realestateapp.entidades\\chatmensaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.entidades\\agente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFAAED25-223A-4CB3-A444-05109709D7C1}|RealEstateApp.Entidades\\RealEstateApp.Entidades.csproj|solutionrelative:realestateapp.entidades\\agente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.datos\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|solutionrelative:realestateapp.datos\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.datos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|solutionrelative:realestateapp.datos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.datos\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|solutionrelative:realestateapp.datos\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\shared\\_layoutcliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\shared\\_layoutcliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\shared\\_cardspropiedades.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\shared\\_cardspropiedades.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\propiedad\\publicar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\propiedad\\publicar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\propiedad\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\propiedad\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\propiedad\\detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\propiedad\\detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\home\\_gridpropiedades.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\home\\_gridpropiedades.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\cuenta\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\cuenta\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\cliente\\_gridpropiedades.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\cliente\\_gridpropiedades.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\chat\\enviarmensaje.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\chat\\enviarmensaje.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\agente\\propiedadesdelagente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\agente\\propiedadesdelagente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\agente\\perfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\agente\\perfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\agente\\ofertasdelcliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\agente\\ofertasdelcliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\agente\\ofertas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\agente\\ofertas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\agente\\listaclientesofertas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\agente\\listaclientesofertas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\agente\\listaclienteschat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\agente\\listaclienteschat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\agente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\agente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\agente\\editarperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\agente\\editarperfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\agente\\chats.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\agente\\chats.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\agente\\chatcliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\agente\\chatcliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\controllers\\propiedadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\controllers\\propiedadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\controllers\\ofertacontrolle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\controllers\\ofertacontrolle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\viewmodels\\detallepropiedadviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\viewmodels\\detallepropiedadviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\viewmodels\\ofertaclienteresumenvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\viewmodels\\ofertaclienteresumenvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\viewmodels\\agentepanelviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\viewmodels\\agentepanelviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\viewmodels\\clientelistadovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\viewmodels\\clientelistadovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\viewmodels\\agenteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\viewmodels\\agenteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\viewmodels\\propiedadcrearviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\viewmodels\\propiedadcrearviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\viewmodels\\propiedadviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\viewmodels\\propiedadviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\viewmodels\\registrousuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\viewmodels\\registrousuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\viewmodels\\simpleusuariovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\viewmodels\\simpleusuariovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\viewmodels\\mensajeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\viewmodels\\mensajeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\viewmodels\\chatviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\viewmodels\\chatviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\viewmodels\\propiedadesdelagenteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\viewmodels\\propiedadesdelagenteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\viewmodels\\homeagenteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\viewmodels\\homeagenteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\viewmodels\\imagenviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\viewmodels\\imagenviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ssssss\\RealEstateApp.Datos\\Migrations\\20250810113006_CrearChatMensajes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\viewmodels\\requests\\favreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\viewmodels\\requests\\favreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\realestateapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\realestateapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ssss\\vs.zipppp\\RealEstateApp.Datos\\Migrations\\20250806155756_AgregarFotoPrincipalEnPropiedad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp\\views\\cuenta\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81FD57D-0F7D-4443-B761-98313F18A3AD}|RealEstateApp\\RealEstateApp.csproj|solutionrelative:realestateapp\\views\\cuenta\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andres Lopez\\source\\repos\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250804184932_SincronizarModelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andres Lopez\\source\\repos\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250804184655_AgregarCampoActivoAgente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{910741B2-62A3-4B3A-A37E-F3B632316A48}|RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.negocio\\realestateapp.negocio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{910741B2-62A3-4B3A-A37E-F3B632316A48}|RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj|solutionrelative:realestateapp.negocio\\realestateapp.negocio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.datos\\migrations\\20250804185408_reagregaractivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|solutionrelative:realestateapp.datos\\migrations\\20250804185408_reagregaractivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.datos\\migrations\\20250804170258_crearrelacionmejora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|solutionrelative:realestateapp.datos\\migrations\\20250804170258_crearrelacionmejora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.datos\\migrations\\20250804162836_creartablapropiedades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|solutionrelative:realestateapp.datos\\migrations\\20250804162836_creartablapropiedades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.datos\\migrations\\20250805111208_agregartituloymetroscuadrados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|solutionrelative:realestateapp.datos\\migrations\\20250805111208_agregartituloymetroscuadrados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.datos\\migrations\\20250805220050_agregarcamposfotodescripcionagente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|solutionrelative:realestateapp.datos\\migrations\\20250805220050_agregarcamposfotodescripcionagente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|d:\\saasdasdasdada\\realestateapp\\realestateapp.datos\\migrations\\20250806121400_creartablafavoritos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D1D76F-15C5-4AAF-8B5C-657A9506091B}|RealEstateApp.Datos\\RealEstateApp.Datos.csproj|solutionrelative:realestateapp.datos\\migrations\\20250806121400_creartablafavoritos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a83394e3-39c2-4678-a3c8-364b69d78fd3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FiltroPropiedadViewModel.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\FiltroPropiedadViewModel.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\ViewModels\\FiltroPropiedadViewModel.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\FiltroPropiedadViewModel.cs",
+              "RelativeToolTip": "RealEstateApp\\ViewModels\\FiltroPropiedadViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T16:07:08.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Detalle.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Cliente\\Detalle.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Cliente\\Detalle.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Cliente\\Detalle.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Cliente\\Detalle.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-05T10:37:20.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MisPropiedades.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Cliente\\MisPropiedades.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Cliente\\MisPropiedades.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Cliente\\MisPropiedades.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Cliente\\MisPropiedades.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAgwGYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-05T10:29:11.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeAgente.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\HomeAgente.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Agente\\HomeAgente.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\HomeAgente.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Agente\\HomeAgente.cshtml",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAAAG8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-06T16:45:30.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAiwJAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-04T15:49:22.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\Controllers\\ClienteController.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "RealEstateApp\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAAO4AAAAAAAAAAAAqwPoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T10:28:12.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Cliente\\Index.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Cliente\\Index.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Cliente\\Index.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Cliente\\Index.cshtml",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAQwLkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-05T10:27:41.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OfertasCliente.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\OfertasCliente.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Agente\\OfertasCliente.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\OfertasCliente.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Agente\\OfertasCliente.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-10T12:47:08.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_LayoutAgente.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Shared\\_LayoutAgente.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Shared\\_LayoutAgente.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Shared\\_LayoutAgente.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Shared\\_LayoutAgente.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAYwCIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-06T16:30:55.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AgenteController.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Controllers\\AgenteController.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\Controllers\\AgenteController.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Controllers\\AgenteController.cs",
+              "RelativeToolTip": "RealEstateApp\\Controllers\\AgenteController.cs",
+              "ViewState": "AgIAAAoCAAAAAAAAAAAiwBYCAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T17:58:10.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\Controllers\\ChatController.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "RealEstateApp\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAA4wNIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T14:31:06.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CuentaController.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Controllers\\CuentaController.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\Controllers\\CuentaController.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Controllers\\CuentaController.cs",
+              "RelativeToolTip": "RealEstateApp\\Controllers\\CuentaController.cs",
+              "ViewState": "AgIAAPsAAAAAAAAAAAAswAwBAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T10:06:59.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FavoritosController.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Controllers\\FavoritosController.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\Controllers\\FavoritosController.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Controllers\\FavoritosController.cs",
+              "RelativeToolTip": "RealEstateApp\\Controllers\\FavoritosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T11:23:37.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "RealEstateApp\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAwwFUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T15:48:06.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-04T16:22:48.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\Usuario.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Entidades\\Usuario.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\Usuario.cs",
+              "RelativeToolTip": "RealEstateApp.Entidades\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T10:11:55.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Negocio\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Negocio\\Mapping\\MappingProfile.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Negocio\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "RealEstateApp.Negocio\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T22:53:27.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Shared\\Class1.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Shared\\Class1.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Shared\\Class1.cs",
+              "RelativeToolTip": "RealEstateApp.Shared\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T18:02:24.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PropiedadDto.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Shared\\Dtos\\PropiedadDto.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Shared\\Dtos\\PropiedadDto.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Shared\\Dtos\\PropiedadDto.cs",
+              "RelativeToolTip": "RealEstateApp.Shared\\Dtos\\PropiedadDto.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwCYAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T18:03:08.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OfertaDto.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Shared\\Dtos\\OfertaDto.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Shared\\Dtos\\OfertaDto.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Shared\\Dtos\\OfertaDto.cs",
+              "RelativeToolTip": "RealEstateApp.Shared\\Dtos\\OfertaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T10:40:15.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MensajeDto.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Shared\\Dtos\\MensajeDto.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Shared\\Dtos\\MensajeDto.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Shared\\Dtos\\MensajeDto.cs",
+              "RelativeToolTip": "RealEstateApp.Shared\\Dtos\\MensajeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T10:39:57.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FavoritoPropDto.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Shared\\Dtos\\FavoritoPropDto.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Shared\\Dtos\\FavoritoPropDto.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Shared\\Dtos\\FavoritoPropDto.cs",
+              "RelativeToolTip": "RealEstateApp.Shared\\Dtos\\FavoritoPropDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T20:03:22.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AgentePerfilDto.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Shared\\Dtos\\AgentePerfilDto.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Shared\\Dtos\\AgentePerfilDto.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Shared\\Dtos\\AgentePerfilDto.cs",
+              "RelativeToolTip": "RealEstateApp.Shared\\Dtos\\AgentePerfilDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T19:26:14.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AgenteDto.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Shared\\Dtos\\AgenteDto.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Shared\\Dtos\\AgenteDto.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Shared\\Dtos\\AgenteDto.cs",
+              "RelativeToolTip": "RealEstateApp.Shared\\Dtos\\AgenteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T18:03:23.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Negocio\\Class1.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Negocio\\Class1.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Negocio\\Class1.cs",
+              "RelativeToolTip": "RealEstateApp.Negocio\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T15:37:03.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PropiedadServicio.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Negocio\\Servicios\\PropiedadServicio.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Negocio\\Servicios\\PropiedadServicio.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Negocio\\Servicios\\PropiedadServicio.cs",
+              "RelativeToolTip": "RealEstateApp.Negocio\\Servicios\\PropiedadServicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T15:47:16.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IPropiedadServicio.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Negocio\\Servicios\\IPropiedadServicio.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Negocio\\Servicios\\IPropiedadServicio.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Negocio\\Servicios\\IPropiedadServicio.cs",
+              "RelativeToolTip": "RealEstateApp.Negocio\\Servicios\\IPropiedadServicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T12:49:18.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IAgenteServicio.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Negocio\\Servicios\\IAgenteServicio.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Negocio\\Servicios\\IAgenteServicio.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Negocio\\Servicios\\IAgenteServicio.cs",
+              "RelativeToolTip": "RealEstateApp.Negocio\\Servicios\\IAgenteServicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T17:59:35.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AgenteServicio.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Negocio\\Servicios\\AgenteServicio.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Negocio\\Servicios\\AgenteServicio.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Negocio\\Servicios\\AgenteServicio.cs",
+              "RelativeToolTip": "RealEstateApp.Negocio\\Servicios\\AgenteServicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T18:25:46.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Propiedad.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\Propiedad.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Entidades\\Propiedad.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\Propiedad.cs",
+              "RelativeToolTip": "RealEstateApp.Entidades\\Propiedad.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAUwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T15:38:02.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Oferta.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\Oferta.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Entidades\\Oferta.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\Oferta.cs",
+              "RelativeToolTip": "RealEstateApp.Entidades\\Oferta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T14:04:15.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "MensajeChat.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\MensajeChat.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Entidades\\MensajeChat.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\MensajeChat.cs",
+              "RelativeToolTip": "RealEstateApp.Entidades\\MensajeChat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T14:03:44.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Mejora.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\Mejora.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Entidades\\Mejora.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\Mejora.cs",
+              "RelativeToolTip": "RealEstateApp.Entidades\\Mejora.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T16:55:29.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ImagenPropiedad.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\ImagenPropiedad.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Entidades\\ImagenPropiedad.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\ImagenPropiedad.cs",
+              "RelativeToolTip": "RealEstateApp.Entidades\\ImagenPropiedad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T16:13:15.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Favorito.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\Favorito.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Entidades\\Favorito.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\Favorito.cs",
+              "RelativeToolTip": "RealEstateApp.Entidades\\Favorito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T11:21:28.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "EmailSettings.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\EmailSettings.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Entidades\\EmailSettings.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\EmailSettings.cs",
+              "RelativeToolTip": "RealEstateApp.Entidades\\EmailSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T12:50:25.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\Cliente.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Entidades\\Cliente.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\Cliente.cs",
+              "RelativeToolTip": "RealEstateApp.Entidades\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T14:41:35.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\Class1.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Entidades\\Class1.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\Class1.cs",
+              "RelativeToolTip": "RealEstateApp.Entidades\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T15:36:30.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ChatMensaje.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\ChatMensaje.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Entidades\\ChatMensaje.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\ChatMensaje.cs",
+              "RelativeToolTip": "RealEstateApp.Entidades\\ChatMensaje.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T11:10:15.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Agente.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\Agente.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Entidades\\Agente.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Entidades\\Agente.cs",
+              "RelativeToolTip": "RealEstateApp.Entidades\\Agente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T16:12:49.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\SeedData.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Datos\\SeedData.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\SeedData.cs",
+              "RelativeToolTip": "RealEstateApp.Datos\\SeedData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T15:51:16.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\Class1.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Datos\\Class1.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\Class1.cs",
+              "RelativeToolTip": "RealEstateApp.Datos\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T15:36:47.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Datos\\AppDbContext.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\AppDbContext.cs",
+              "RelativeToolTip": "RealEstateApp.Datos\\AppDbContext.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAswAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T15:40:46.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Program.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\Program.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Program.cs",
+              "RelativeToolTip": "RealEstateApp\\Program.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T15:42:33.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-09T14:16:11.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-04T17:41:39.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "_LayoutCliente.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Shared\\_LayoutCliente.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Shared\\_LayoutCliente.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Shared\\_LayoutCliente.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Shared\\_LayoutCliente.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-06T12:14:50.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "_CardsPropiedades.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Shared\\_CardsPropiedades.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Shared\\_CardsPropiedades.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Shared\\_CardsPropiedades.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Shared\\_CardsPropiedades.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-09T22:47:22.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Publicar.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Propiedad\\Publicar.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Propiedad\\Publicar.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Propiedad\\Publicar.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Propiedad\\Publicar.cshtml",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAAAJ8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-07T12:36:25.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Propiedad\\Index.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Propiedad\\Index.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Propiedad\\Index.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Propiedad\\Index.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-05T22:56:14.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Detalle.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Propiedad\\Detalle.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Propiedad\\Detalle.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Propiedad\\Detalle.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Propiedad\\Detalle.cshtml",
+              "ViewState": "AgIAADUDAAAAAAAAAAAmwIwCAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-04T16:11:51.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "_GridPropiedades.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Home\\_GridPropiedades.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Home\\_GridPropiedades.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Home\\_GridPropiedades.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Home\\_GridPropiedades.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T13:19:15.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Cuenta\\Login.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Cuenta\\Login.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Cuenta\\Login.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Cuenta\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-05T20:14:41.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "_GridPropiedades.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Cliente\\_GridPropiedades.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Cliente\\_GridPropiedades.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Cliente\\_GridPropiedades.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Cliente\\_GridPropiedades.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-09T22:54:59.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "EnviarMensaje.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Chat\\EnviarMensaje.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Chat\\EnviarMensaje.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Chat\\EnviarMensaje.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Chat\\EnviarMensaje.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-06T14:32:13.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "PropiedadesDelAgente.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\PropiedadesDelAgente.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Agente\\PropiedadesDelAgente.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\PropiedadesDelAgente.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Agente\\PropiedadesDelAgente.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-04T17:59:13.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Perfil.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\Perfil.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Agente\\Perfil.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\Perfil.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Agente\\Perfil.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-06T19:22:05.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "OfertasDelCliente.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\OfertasDelCliente.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Agente\\OfertasDelCliente.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\OfertasDelCliente.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Agente\\OfertasDelCliente.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-10T15:31:02.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Ofertas.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\Ofertas.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Agente\\Ofertas.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\Ofertas.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Agente\\Ofertas.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-10T12:46:42.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "ListaClientesOfertas.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\ListaClientesOfertas.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Agente\\ListaClientesOfertas.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\ListaClientesOfertas.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Agente\\ListaClientesOfertas.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-10T15:30:47.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "ListaClientesChat.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\ListaClientesChat.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Agente\\ListaClientesChat.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\ListaClientesChat.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Agente\\ListaClientesChat.cshtml",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAJsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-10T15:08:28.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\Index.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Agente\\Index.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\Index.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Agente\\Index.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAADQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-04T17:58:49.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "EditarPerfil.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\EditarPerfil.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Agente\\EditarPerfil.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\EditarPerfil.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Agente\\EditarPerfil.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-06T20:35:56.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Chats.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\Chats.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Agente\\Chats.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\Chats.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Agente\\Chats.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-10T12:45:54.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "ChatCliente.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\ChatCliente.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Agente\\ChatCliente.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Agente\\ChatCliente.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Agente\\ChatCliente.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-10T12:46:25.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\Hubs\\ChatHub.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "RealEstateApp\\Hubs\\ChatHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T11:46:37.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "PropiedadController.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Controllers\\PropiedadController.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\Controllers\\PropiedadController.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Controllers\\PropiedadController.cs",
+              "RelativeToolTip": "RealEstateApp\\Controllers\\PropiedadController.cs",
+              "ViewState": "AgIAAF4CAAAAAAAAAAAkwO4BAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T16:10:42.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "OfertaControlle.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Controllers\\OfertaControlle.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\Controllers\\OfertaControlle.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Controllers\\OfertaControlle.cs",
+              "RelativeToolTip": "RealEstateApp\\Controllers\\OfertaControlle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T15:31:27.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "ClienteListadoVM.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\ClienteListadoVM.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\ViewModels\\ClienteListadoVM.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\ClienteListadoVM.cs",
+              "RelativeToolTip": "RealEstateApp\\ViewModels\\ClienteListadoVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T15:18:33.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "DetallePropiedadViewModel.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\DetallePropiedadViewModel.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\ViewModels\\DetallePropiedadViewModel.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\DetallePropiedadViewModel.cs",
+              "RelativeToolTip": "RealEstateApp\\ViewModels\\DetallePropiedadViewModel.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAwD4AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T14:06:04.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "AgentePanelViewModels.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\AgentePanelViewModels.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\ViewModels\\AgentePanelViewModels.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\AgentePanelViewModels.cs",
+              "RelativeToolTip": "RealEstateApp\\ViewModels\\AgentePanelViewModels.cs",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAAAMsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T12:52:40.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "OfertaClienteResumenVM.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\OfertaClienteResumenVM.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\ViewModels\\OfertaClienteResumenVM.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\OfertaClienteResumenVM.cs",
+              "RelativeToolTip": "RealEstateApp\\ViewModels\\OfertaClienteResumenVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T15:55:53.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "AgenteViewModel.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\AgenteViewModel.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\ViewModels\\AgenteViewModel.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\AgenteViewModel.cs",
+              "RelativeToolTip": "RealEstateApp\\ViewModels\\AgenteViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T21:56:54.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "PropiedadCrearViewModel.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\PropiedadCrearViewModel.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\ViewModels\\PropiedadCrearViewModel.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\PropiedadCrearViewModel.cs",
+              "RelativeToolTip": "RealEstateApp\\ViewModels\\PropiedadCrearViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T12:36:37.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "PropiedadViewModel.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\PropiedadViewModel.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\ViewModels\\PropiedadViewModel.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\PropiedadViewModel.cs",
+              "RelativeToolTip": "RealEstateApp\\ViewModels\\PropiedadViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T15:45:31.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "RegistroUsuarioViewModel.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\RegistroUsuarioViewModel.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\ViewModels\\RegistroUsuarioViewModel.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\RegistroUsuarioViewModel.cs",
+              "RelativeToolTip": "RealEstateApp\\ViewModels\\RegistroUsuarioViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T10:06:21.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "SimpleUsuarioVm.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\SimpleUsuarioVm.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\ViewModels\\SimpleUsuarioVm.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\SimpleUsuarioVm.cs",
+              "RelativeToolTip": "RealEstateApp\\ViewModels\\SimpleUsuarioVm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T15:33:38.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "MensajeViewModel.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\MensajeViewModel.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\ViewModels\\MensajeViewModel.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\MensajeViewModel.cs",
+              "RelativeToolTip": "RealEstateApp\\ViewModels\\MensajeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T14:52:38.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "ChatViewModel.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\ChatViewModel.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\ViewModels\\ChatViewModel.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\ChatViewModel.cs",
+              "RelativeToolTip": "RealEstateApp\\ViewModels\\ChatViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T14:51:44.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "PropiedadesDelAgenteViewModel.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\PropiedadesDelAgenteViewModel.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\ViewModels\\PropiedadesDelAgenteViewModel.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\PropiedadesDelAgenteViewModel.cs",
+              "RelativeToolTip": "RealEstateApp\\ViewModels\\PropiedadesDelAgenteViewModel.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwCAAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T16:57:49.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "HomeAgenteViewModel.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\HomeAgenteViewModel.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\ViewModels\\HomeAgenteViewModel.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\HomeAgenteViewModel.cs",
+              "RelativeToolTip": "RealEstateApp\\ViewModels\\HomeAgenteViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T16:52:53.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "ImagenViewModel.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\ImagenViewModel.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\ViewModels\\ImagenViewModel.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\ImagenViewModel.cs",
+              "RelativeToolTip": "RealEstateApp\\ViewModels\\ImagenViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T23:03:43.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "RealEstateApp\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T09:58:26.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "20250810113006_CrearChatMensajes.cs",
+              "DocumentMoniker": "D:\\ssssss\\RealEstateApp.Datos\\Migrations\\20250810113006_CrearChatMensajes.cs",
+              "RelativeDocumentMoniker": "..\\..\\ssssss\\RealEstateApp.Datos\\Migrations\\20250810113006_CrearChatMensajes.cs",
+              "ToolTip": "D:\\ssssss\\RealEstateApp.Datos\\Migrations\\20250810113006_CrearChatMensajes.cs",
+              "RelativeToolTip": "..\\..\\ssssss\\RealEstateApp.Datos\\Migrations\\20250810113006_CrearChatMensajes.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T11:30:06.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "FavReq.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\Requests\\FavReq.cs",
+              "RelativeDocumentMoniker": "RealEstateApp\\ViewModels\\Requests\\FavReq.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\ViewModels\\Requests\\FavReq.cs",
+              "RelativeToolTip": "RealEstateApp\\ViewModels\\Requests\\FavReq.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T19:55:56.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\appsettings.json",
+              "RelativeDocumentMoniker": "RealEstateApp\\appsettings.json",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\appsettings.json",
+              "RelativeToolTip": "RealEstateApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-04T15:41:11.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "RealEstateApp.csproj",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\RealEstateApp.csproj",
+              "RelativeDocumentMoniker": "RealEstateApp\\RealEstateApp.csproj",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\RealEstateApp.csproj",
+              "RelativeToolTip": "RealEstateApp\\RealEstateApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-04T15:47:42.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "20250806155756_AgregarFotoPrincipalEnPropiedad.cs",
+              "DocumentMoniker": "D:\\ssss\\vs.zipppp\\RealEstateApp.Datos\\Migrations\\20250806155756_AgregarFotoPrincipalEnPropiedad.cs",
+              "RelativeDocumentMoniker": "..\\..\\ssss\\vs.zipppp\\RealEstateApp.Datos\\Migrations\\20250806155756_AgregarFotoPrincipalEnPropiedad.cs",
+              "ToolTip": "D:\\ssss\\vs.zipppp\\RealEstateApp.Datos\\Migrations\\20250806155756_AgregarFotoPrincipalEnPropiedad.cs",
+              "RelativeToolTip": "..\\..\\ssss\\vs.zipppp\\RealEstateApp.Datos\\Migrations\\20250806155756_AgregarFotoPrincipalEnPropiedad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T15:57:56.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "20250806121400_CrearTablaFavoritos.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250806121400_CrearTablaFavoritos.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Datos\\Migrations\\20250806121400_CrearTablaFavoritos.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250806121400_CrearTablaFavoritos.cs",
+              "RelativeToolTip": "RealEstateApp.Datos\\Migrations\\20250806121400_CrearTablaFavoritos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T12:14:00.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "Registro.cshtml",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Cuenta\\Registro.cshtml",
+              "RelativeDocumentMoniker": "RealEstateApp\\Views\\Cuenta\\Registro.cshtml",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp\\Views\\Cuenta\\Registro.cshtml",
+              "RelativeToolTip": "RealEstateApp\\Views\\Cuenta\\Registro.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAswHwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-05T10:05:21.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "20250805220050_AgregarCamposFotoDescripcionAgente.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250805220050_AgregarCamposFotoDescripcionAgente.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Datos\\Migrations\\20250805220050_AgregarCamposFotoDescripcionAgente.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250805220050_AgregarCamposFotoDescripcionAgente.cs",
+              "RelativeToolTip": "RealEstateApp.Datos\\Migrations\\20250805220050_AgregarCamposFotoDescripcionAgente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T22:00:50.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "20250805111208_AgregarTituloYMetrosCuadrados.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250805111208_AgregarTituloYMetrosCuadrados.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Datos\\Migrations\\20250805111208_AgregarTituloYMetrosCuadrados.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250805111208_AgregarTituloYMetrosCuadrados.cs",
+              "RelativeToolTip": "RealEstateApp.Datos\\Migrations\\20250805111208_AgregarTituloYMetrosCuadrados.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T11:12:08.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "20250804184655_AgregarCampoActivoAgente.cs",
+              "DocumentMoniker": "C:\\Users\\Andres Lopez\\source\\repos\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250804184655_AgregarCampoActivoAgente.cs",
+              "ToolTip": "C:\\Users\\Andres Lopez\\source\\repos\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250804184655_AgregarCampoActivoAgente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T18:46:56.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "20250804185408_ReAgregarActivo.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250804185408_ReAgregarActivo.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Datos\\Migrations\\20250804185408_ReAgregarActivo.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250804185408_ReAgregarActivo.cs",
+              "RelativeToolTip": "RealEstateApp.Datos\\Migrations\\20250804185408_ReAgregarActivo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T18:54:08.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "20250804184932_SincronizarModelo.cs",
+              "DocumentMoniker": "C:\\Users\\Andres Lopez\\source\\repos\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250804184932_SincronizarModelo.cs",
+              "ToolTip": "C:\\Users\\Andres Lopez\\source\\repos\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250804184932_SincronizarModelo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T18:49:32.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "RealEstateApp.Negocio.csproj",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj",
+              "RelativeDocumentMoniker": "RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj",
+              "RelativeToolTip": "RealEstateApp.Negocio\\RealEstateApp.Negocio.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-04T16:55:46.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "20250804170258_CrearRelacionMejora.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250804170258_CrearRelacionMejora.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Datos\\Migrations\\20250804170258_CrearRelacionMejora.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250804170258_CrearRelacionMejora.cs",
+              "RelativeToolTip": "RealEstateApp.Datos\\Migrations\\20250804170258_CrearRelacionMejora.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T17:02:58.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "20250804162836_CrearTablaPropiedades.cs",
+              "DocumentMoniker": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250804162836_CrearTablaPropiedades.cs",
+              "RelativeDocumentMoniker": "RealEstateApp.Datos\\Migrations\\20250804162836_CrearTablaPropiedades.cs",
+              "ToolTip": "D:\\saasdasdasdada\\RealEstateApp\\RealEstateApp.Datos\\Migrations\\20250804162836_CrearTablaPropiedades.cs",
+              "RelativeToolTip": "RealEstateApp.Datos\\Migrations\\20250804162836_CrearTablaPropiedades.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T16:28:36.61Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

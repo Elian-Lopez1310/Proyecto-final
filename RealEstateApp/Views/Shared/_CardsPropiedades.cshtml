@@ -1,0 +1,37 @@
+﻿@model RealEstateApp.Web.ViewModels.FiltroPropiedadViewModel
+
+@if (Model.Resultados == null || !Model.Resultados.Any())
+{
+    <div class="alert alert-warning text-center">No se encontraron propiedades.</div>
+}
+else
+{
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+        @foreach (var p in Model.Resultados)
+        {
+            var img = !string.IsNullOrWhiteSpace(p.ImagenUrl) ? p.ImagenUrl
+            : !string.IsNullOrWhiteSpace(p.FotoPrincipal) ? p.FotoPrincipal
+            : "/images/default.png";
+            if (!img.StartsWith("http", StringComparison.OrdinalIgnoreCase))
+                img = Url.Content("~/" + img.TrimStart('/'));
+            var detalle = Url.Action("Detalle", "Propiedad", new { codigo = p.Codigo });
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="@img" class="card-img-top" style="height:200px;object-fit:cover"
+                         alt="img @p.Codigo" onerror="this.src='@Url.Content("~/images/default.png")'">
+                    <div class="card-body">
+                        <h6 class="card-title text-truncate">@p.Tipo - @p.Ubicacion</h6>
+                        <div class="small text-muted mb-1">Código: @p.Codigo</div>
+                        <div class="small">US$ @p.Precio.ToString("N2")</div>
+                        <div class="small text-muted d-flex gap-3 mt-1">
+                            <span>🛏 @p.Habitaciones</span>
+                            <span>🛁 @p.Banos</span>
+                        </div>
+                        <a class="btn btn-outline-primary btn-sm mt-2" href="@detalle">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

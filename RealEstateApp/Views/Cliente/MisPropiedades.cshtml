@@ -1,0 +1,214 @@
+﻿@using RealEstateApp.Shared.Dtos
+@model IEnumerable<PropiedadDto>
+
+@{
+    ViewData["Title"] = "Mis Propiedades Favoritas";
+    Layout = "~/Views/Shared/_LayoutCliente.cshtml";
+
+    string Norm(string raw)
+    {
+        if (string.IsNullOrWhiteSpace(raw)) return null;
+        raw = raw.Trim();
+        if (raw.Equals("null", StringComparison.OrdinalIgnoreCase)) return null;
+
+        if (raw.StartsWith("http://", StringComparison.OrdinalIgnoreCase) ||
+            raw.StartsWith("https://", StringComparison.OrdinalIgnoreCase))
+            return raw;
+
+        if (raw.StartsWith("~/")) return "/" + raw[2..].TrimStart('/');
+        if (raw.StartsWith("/")) return raw;
+
+        return "/" + raw.TrimStart('/');
+    }
+
+    bool IsExternal(string r) =>
+        !string.IsNullOrWhiteSpace(r) &&
+        (r.StartsWith("http://", StringComparison.OrdinalIgnoreCase) ||
+         r.StartsWith("https://", StringComparison.OrdinalIgnoreCase));
+
+    string ToSrc(string normalized)
+    {
+        if (string.IsNullOrWhiteSpace(normalized)) return null;
+        if (IsExternal(normalized)) return normalized;
+        return Url.Content("~/" + normalized.TrimStart('/'));
+    }
+
+    var props = (Model ?? Enumerable.Empty<PropiedadDto>())
+        .Where(p => string.IsNullOrWhiteSpace(p?.TipoVenta) ||
+                    !p.TipoVenta.Equals("Vendida", StringComparison.OrdinalIgnoreCase))
+        .ToList();
+}
+
+<div class="favorites-hero py-3 py-md-4 mb-3 text-center">
+    <div class="container">
+        <div class="d-inline-flex align-items-center gap-3 px-3 py-2 rounded-4 shadow-sm bg-white">
+            <span class="fs-3">⭐</span>
+            <h1 class="h4 h3-md m-0 fw-semibold text-dark">Mis Propiedades Favoritas</h1>
+            <span class="badge bg-primary rounded-pill ms-1">@props.Count</span>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    @if (!props.Any())
+    {
+        <div class="alert alert-info text-center shadow-sm rounded-4">
+            Aún no tienes propiedades en favoritos.
+            <a class="alert-link" href="@Url.Action("Index", "Cliente")">Explorar propiedades</a>
+        </div>
+    }
+    else
+    {
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            @foreach (var p in props)
+            {
+                var rawFirst = !string.IsNullOrWhiteSpace(p.ImagenUrl) ? p.ImagenUrl
+                : !string.IsNullOrWhiteSpace(p.FotoPrincipal) ? p.FotoPrincipal
+                : null;
+
+                var cand = Norm(rawFirst);
+
+                if (Context.Request.IsHttps && cand != null && cand.StartsWith("http://", StringComparison.OrdinalIgnoreCase))
+                {
+                    var localFallback = Norm(p.FotoPrincipal);
+                    cand = localFallback;
+                }
+
+                if (string.IsNullOrWhiteSpace(cand))
+                {
+                    continue;
+                }
+
+                var src = ToSrc(cand);
+
+                var titulo = $"{(string.IsNullOrWhiteSpace(p.Tipo) ? "Propiedad" : p.Tipo)} - {p.Ubicacion}";
+                var detalleUrl = Url.Action("Detalle", "Propiedad", new { codigo = p.Codigo });
+
+                <div class="col" id="card-@p.Codigo" data-prop-card>
+                    <div class="card border-0 shadow-sm rounded-4 h-100 card-hover">
+                        <div class="position-relative rounded-top-4 overflow-hidden" role="button" onclick="location.href='@detalleUrl'">
+                            <div class="ratio ratio-16x9">
+                                <img src="@src"
+                                     alt="Imagen @p.Codigo"
+                                     class="w-100 h-100 object-fit-cover"
+                                     loading="lazy"
+                                     onerror="this.closest('[data-prop-card]')?.remove();" />
+                            </div>
+                            <span class="badge position-absolute top-0 end-0 m-2 bg-primary-subtle text-primary-emphasis">
+                                @(!string.IsNullOrWhiteSpace(p.TipoVenta) ? p.TipoVenta : "—")
+                            </span>
+                            <div class="img-gradient position-absolute bottom-0 start-0 end-0 p-3">
+                                <div class="text-white fw-semibold text-truncate">@titulo</div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <div class="text-muted small">Código: <strong>@p.Codigo</strong></div>
+                                <div class="price-tag">
+                                    <span class="text-muted small">US$</span>
+                                    <span class="fs-5 fw-semibold">@p.Precio.ToString("N2")</span>
+                                </div>
+                            </div>
+
+                            <!-- ⬇️ Botón justo DEBAJO del precio -->
+                            <div class="text-end mb-2">
+                                <a href="javascript:history.back()" class="btn btn-outline-secondary btn-sm">
+                                    ← Volver atrás
+                                </a>
+                                @* Si prefieres volver siempre al Index:
+                                <a href="@Url.Action("Index","Cliente")" class="btn btn-outline-secondary btn-sm">← Volver atrás</a>
+                                *@
+                            </div>
+
+                            <div class="d-flex gap-3 text-muted small">
+                                <span>🛏 @p.Habitaciones</span>
+                                <span>🛁 @p.Banos</span>
+                                <span>📐 @((p.Metros > 0 ? p.Metros : p.MetrosCuadrados)) m²</span>
+                            </div>
+                        </div>
+
+                        <div class="card-footer bg-white border-0 pt-0 pb-3 px-3">
+                           
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('click', async (ev) => {
+            const btn = ev.target.closest('.btn-quitar-fav');
+            if (!btn) return;
+
+            const codigo = btn.dataset.codigo;
+            if (!codigo) return;
+
+            btn.disabled = true;
+
+            try {
+                const resp = await fetch('/Cliente/QuitarFavorito', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ codigo })
+                });
+                const data = await resp.json().catch(() => ({}));
+                if (!resp.ok || !data.success) {
+                    alert(data.message || 'No se pudo quitar de favoritos.');
+                    btn.disabled = false;
+                    return;
+                }
+                const card = document.getElementById(`card-${codigo}`);
+                if (card) card.remove();
+                if (!document.querySelector('[data-prop-card]')) location.reload();
+            } catch (e) {
+                console.error(e);
+                alert('Error de red.');
+                btn.disabled = false;
+            }
+        });
+    </script>
+
+    <style>
+        .favorites-hero {
+            background: linear-gradient(180deg,rgba(13,110,253,.06),transparent)
+        }
+
+        .card-hover {
+            transition: transform .15s, box-shadow .15s
+        }
+
+            .card-hover:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 14px 28px rgba(0,0,0,.08)
+            }
+
+        .img-gradient {
+            background: linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.45) 100%)
+        }
+
+        .object-fit-cover {
+            object-fit: cover
+        }
+
+        .rounded-top-4 {
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem
+        }
+
+        .price-tag {
+            line-height: 1
+        }
+
+        .bg-primary-subtle {
+            background-color: rgba(13,110,253,.12) !important
+        }
+
+        .text-primary-emphasis {
+            color: #0d6efd !important
+        }
+    </style>
+}

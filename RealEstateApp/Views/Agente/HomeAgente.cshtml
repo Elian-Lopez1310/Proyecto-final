@@ -1,0 +1,158 @@
+﻿@model RealEstateApp.Web.ViewModels.PropiedadesDelAgenteViewModel
+
+@{
+    ViewData["Title"] = "Home del Agente";
+    Layout = "~/Views/Shared/_LayoutAgente.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="text-center">
+        <h2 class="mb-2">👋 Bienvenido, <strong>@Model.NombreAgente</strong></h2>
+        <h5 class="mb-4 text-muted">Estas son tus propiedades registradas:</h5>
+
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show fw-bold text-center" role="alert">
+                @TempData["Success"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
+        <a class="btn btn-outline-primary mb-3" href="/Agente/Perfil">
+            <i class="bi bi-person-circle"></i> Ir a mi perfil
+        </a>
+
+        <a class="btn btn-success mb-4 ms-2" href="/Propiedad/Publicar">
+            <i class="bi bi-plus-circle"></i> Publicar nueva propiedad
+        </a>
+    </div>
+
+    <div class="row js-propias-grid">
+        @if (Model.PropiedadesAgente == null || !Model.PropiedadesAgente.Any())
+        {
+            <div class="col-12">
+                <div class="alert alert-info text-center">
+                    No has registrado ninguna propiedad aún.
+                </div>
+            </div>
+        }
+        else
+        {
+            foreach (var p in Model.PropiedadesAgente)
+            {
+                var foto = !string.IsNullOrWhiteSpace(p.FotoPrincipal) ? p.FotoPrincipal : "/images/default.png";
+                var metros = p.MetrosCuadrados > 0 ? p.MetrosCuadrados : p.Metros;
+
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg border-0 rounded-4 h-100 position-relative js-prop-card"
+                         style="cursor:pointer"
+                         data-url="@Url.Action("Detalle", "Propiedad", new { codigo = p.Codigo })">
+
+                        <!-- Eliminar publicación (POST) -->
+                        <form action="@Url.Action("EliminarPublicacion", "Propiedad")"
+                              method="post"
+                              class="position-absolute top-0 end-0 m-2 js-no-nav"
+                              onsubmit="return confirm('¿Está seguro de eliminar esta publicación? Esta acción no se puede deshacer.');">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="codigo" value="@p.Codigo" />
+                            <button type="submit" class="btn btn-danger btn-sm js-no-nav" title="Eliminar">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </form>
+
+                        <img src="@Url.Content(foto)"
+                             class="card-img-top rounded-top"
+                             style="height:200px; object-fit:cover;"
+                             alt="Imagen propiedad"
+                             onerror="this.onerror=null; this.src='/images/default.png';" />
+
+                        <div class="card-body p-3">
+                            <h5 class="card-title fw-semibold text-truncate js-title">@p.Titulo</h5>
+
+                            <p class="mb-1 small">
+                                <strong class="js-venta">@p.TipoVenta:</strong>
+                                US$ <span class="js-price">@p.Precio.ToString("N2")</span>
+                            </p>
+
+                            <p class="text-muted small mb-2 js-sub">@p.Tipo - @p.Ubicacion</p>
+
+                            <div class="d-flex justify-content-between align-items-center small text-muted">
+                                <span>🛏 <span class="js-beds">@p.Habitaciones</span></span>
+                                <span>🛁 <span class="js-baths">@p.Banos</span></span>
+                                <span>📐 <span class="js-m2">@metros</span> m²</span>
+                            </div>
+
+                            @if (p.EsFavorita)
+                            {
+                                <div class="mt-2"><span class="badge bg-warning text-dark">⭐ Marcada como favorita</span></div>
+                            }
+                            @if (string.Equals(p.TipoVenta, "Vendida", StringComparison.OrdinalIgnoreCase))
+                            {
+                                <div class="mt-2"><span class="badge bg-danger">✅ Vendida</span></div>
+                            }
+                            else
+                            {
+                                <div class="mt-2"><span class="badge bg-success">Disponible</span></div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+      
+        document.addEventListener('click', function (e) {
+            const card = e.target.closest('.js-prop-card');
+            if (!card) return;
+
+           
+            if (e.target.closest('.js-no-nav') ||
+                ['A', 'BUTTON', 'INPUT', 'LABEL', 'SELECT', 'TEXTAREA'].includes(e.target.tagName)) {
+                return;
+            }
+
+            const url = card.getAttribute('data-url');
+            if (url) window.location = url;
+        });
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+          const raw = sessionStorage.getItem('ultimaPropPublicada');
+          if (!raw) return;
+
+          let u;
+          try { u = JSON.parse(raw); } catch { sessionStorage.removeItem('ultimaPropPublicada'); return; }
+
+          const card = document.querySelector('.js-prop-card') || document.querySelector('.card');
+          if (!card) { sessionStorage.removeItem('ultimaPropPublicada'); return; }
+
+          const setText = (sel, val) => {
+            const el = card.querySelector(sel);
+            if (!el) return;
+            if (val === null || val === undefined || (typeof val === 'string' && val.trim() === '')) return;
+            el.textContent = val;
+          };
+
+          setText('.js-title', (u.titulo || '').trim());
+          setText('.js-venta', (u.tipoVenta || 'Venta') + ':');
+
+          const precioFmt = Number(u.precio || 0).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+          setText('.js-price', precioFmt);
+
+          const sub = [u.tipo || '', u.ubicacion || ''].map(s => (s || '').trim()).filter(Boolean).join(' - ') || '-';
+          setText('.js-sub', sub);
+
+          setText('.js-beds', (u.habitaciones ?? 0));
+          setText('.js-baths', (u.banos ?? 0));
+
+          const m2 = (u.metrosCuadrados && u.metrosCuadrados > 0) ? u.metrosCuadrados : (u.metros || 0);
+          setText('.js-m2', m2);
+
+          sessionStorage.removeItem('ultimaPropPublicada');
+        });
+    </script>
+}

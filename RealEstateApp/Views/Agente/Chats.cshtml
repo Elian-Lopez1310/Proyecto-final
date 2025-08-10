@@ -1,0 +1,28 @@
+﻿@model RealEstateApp.Web.ViewModels.AgenteChatListVM
+@{
+    ViewData["Title"] = "Chats";
+    Layout = "~/Views/Shared/_LayoutAgente.cshtml";
+}
+<div class="container mt-4">
+    <h3>💬 Chats · Propiedad @Model.CodigoPropiedad</h3>
+    @if (!Model.Clientes.Any())
+    {
+        <div class="alert alert-info mt-3">Aún no hay conversaciones.</div>
+    }
+    else
+    {
+        <div class="list-group mt-3">
+            @foreach (var c in Model.Clientes)
+            {
+                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                   href="@Url.Action("ChatCliente", "AgentePropiedad", new { propiedadId = Model.PropiedadId, clienteId = c.ClienteId })">
+                    <div>
+                        <strong>@c.NombreCliente</strong>
+                        <div class="small text-muted">@c.UltimoMensaje</div>
+                    </div>
+                    <span class="badge bg-secondary">@c.FechaUlt?.ToString("dd/MM/yyyy HH:mm")</span>
+                </a>
+            }
+        </div>
+    }
+</div>

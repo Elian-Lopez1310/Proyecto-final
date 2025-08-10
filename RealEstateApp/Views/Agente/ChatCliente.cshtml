@@ -1,0 +1,165 @@
+﻿@model List<RealEstateApp.Web.ViewModels.ChatMensajeViewModel>
+@{
+    Layout = "~/Views/Shared/_LayoutAgente.cshtml";
+    ViewData["Title"] = "Chat con cliente";
+
+    var propiedadId = (int)ViewBag.PropiedadId;
+    var clienteId = (int)ViewBag.ClienteId;
+}
+
+<style>
+    .chat-box {
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 10px 30px rgba(0,0,0,.06);
+        min-height: 520px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden
+    }
+
+    .chat-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 16px;
+        border-bottom: 1px solid #edf0f3;
+        background: linear-gradient(180deg,#ffffff,#f7f9ff)
+    }
+
+    .chat-title {
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: .5rem
+    }
+
+    .chat-body {
+        padding: 16px;
+        height: 380px;
+        overflow: auto;
+        background: #fbfcfe
+    }
+
+    .msg {
+        max-width: 75%;
+        padding: 10px 12px;
+        border-radius: 14px;
+        margin-bottom: 10px;
+        word-break: break-word;
+        position: relative
+    }
+
+        .msg.agente {
+            background: #6f7cff;
+            color: #fff;
+            margin-left: auto;
+            border-bottom-right-radius: 4px
+        }
+
+        .msg.cliente {
+            background: #eef1ff;
+            color: #2d2d2d;
+            margin-right: auto;
+            border-bottom-left-radius: 4px
+        }
+
+        .msg time {
+            display: block;
+            font-size: .75rem;
+            opacity: .85;
+            margin-top: 4px
+        }
+
+    .chat-foot {
+        padding: 12px;
+        border-top: 1px solid #edf0f3;
+        background: #fff
+    }
+</style>
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="mb-0">💬 Chat con cliente</h3>
+        
+    </div>
+
+    <div class="chat-box">
+        <div class="chat-head">
+            <div class="chat-title">
+                <i class="bi bi-person-badge"></i> Conversación
+            </div>
+            <small class="text-muted">Propiedad ID: @propiedadId · Cliente ID: @clienteId</small>
+        </div>
+
+        <div id="chatBody" class="chat-body">
+            @if (Model != null && Model.Any())
+            {
+                foreach (var m in Model.OrderBy(x => x.Fecha))
+                {
+                    var cls = m.EsDelAgente ? "agente" : "cliente";
+                    <div class="msg @cls">
+                        @m.Texto
+                        <time>@m.Fecha.ToString("dd/MM/yyyy HH:mm")</time>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="text-center text-muted mt-4">No hay mensajes todavía.</div>
+            }
+        </div>
+
+        <div class="chat-foot">
+            <form id="formSend" class="d-flex gap-2" autocomplete="off">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="propiedadId" value="@propiedadId" />
+                <input type="hidden" name="clienteId" value="@clienteId" />
+                <input id="txtMsg" name="texto" class="form-control" placeholder="Escribe un mensaje..." />
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const chatBody = document.getElementById('chatBody');
+        const formSend = document.getElementById('formSend');
+        const txtMsg   = document.getElementById('txtMsg');
+
+        function scrollBottom(){ chatBody.scrollTop = chatBody.scrollHeight; }
+        document.addEventListener('DOMContentLoaded', scrollBottom);
+
+        function antiforgery() {
+          const input = formSend.querySelector('input[name="__RequestVerificationToken"]');
+          return input ? input.value : '';
+        }
+
+        formSend.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const texto = (txtMsg.value || '').trim();
+          if (!texto) return;
+
+          const data = new FormData(formSend);
+          const res  = await fetch('@Url.Action("EnviarMensajeAgente", "Agente")', {
+            method: 'POST',
+            headers: { 'RequestVerificationToken': antiforgery() },
+            body: data
+          });
+
+          const json = await res.json();
+          if (json?.success) {
+           
+            const div = document.createElement('div');
+            div.className = 'msg agente';
+            div.innerHTML = `${texto}<time>${new Date().toLocaleString()}</time>`;
+            chatBody.appendChild(div);
+            txtMsg.value = '';
+            scrollBottom();
+          } else {
+            alert(json?.message || 'No se pudo enviar el mensaje.');
+          }
+        });
+    </script>
+}

@@ -1,0 +1,233 @@
+﻿@model RealEstateApp.ViewModels.PropiedadCrearViewModel
+@{
+    ViewData["Title"] = "Publicar Nueva Propiedad";
+    Layout = "~/Views/Shared/_LayoutAgente.cshtml";
+}
+
+<style>
+    .page-wrap {
+        max-width: 960px;
+        margin: auto
+    }
+
+    .card-elev {
+        border: 0;
+        border-radius: 18px;
+        box-shadow: 0 10px 28px rgba(0,0,0,.08)
+    }
+
+    .form-section-title {
+        font-weight: 700;
+        font-size: .95rem;
+        margin: .25rem 0 .5rem;
+        display: flex;
+        gap: .5rem;
+        align-items: center
+    }
+
+    .hint {
+        font-size: .8rem;
+        color: #6c757d
+    }
+
+    .img-preview {
+        width: 100%;
+        max-height: 260px;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 1px solid #eee;
+        display: none
+    }
+</style>
+
+<div class="page-wrap my-4">
+    <div class="text-center mb-3">
+        <h4 class="mb-1">📤 Publicar Nueva Propiedad</h4>
+        <p class="text-muted mb-0">Completa los datos y sube la imagen principal.</p>
+    </div>
+
+    <div class="card card-elev">
+        <div class="card-body p-4">
+            <form id="formPublicar"
+                  asp-action="Publicar"
+                  asp-controller="Propiedad"
+                  method="post"
+                  enctype="multipart/form-data">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="PublicarSoloAgente" value="true" />
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="form-section-title">🏷️ Tipo</div>
+                        <select asp-for="Tipo" class="form-select" required>
+                            <option value="">Seleccione…</option>
+                            <option>Apartamento</option>
+                            <option>Casa</option>
+                            <option>Local</option>
+                            <option>Solar</option>
+                        </select>
+                        <span asp-validation-for="Tipo" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-section-title">💼 Tipo de venta</div>
+                        <select asp-for="TipoVenta" class="form-select" required>
+                            <option value="">Seleccione…</option>
+                            <option>Venta</option>
+                            <option>Alquiler</option>
+                        </select>
+                        <span asp-validation-for="TipoVenta" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="form-section-title">📍 Ubicación</div>
+                        <input asp-for="Ubicacion" class="form-control" placeholder="Ciudad, sector o dirección" required />
+                        <span asp-validation-for="Ubicacion" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-section-title">💰 Precio (US$)</div>
+                        <input asp-for="Precio" id="Precio" class="form-control" type="number" step="0.01" min="1" inputmode="decimal" required />
+                        <span asp-validation-for="Precio" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-section-title">🛏 Habitaciones</div>
+                        <input asp-for="Habitaciones" class="form-control" type="number" step="1" min="1" required />
+                        <span asp-validation-for="Habitaciones" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-section-title">🛁 Baños</div>
+                        <input asp-for="Banos" class="form-control" type="number" step="1" min="1" required />
+                        <span asp-validation-for="Banos" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-section-title">📏 Metros</div>
+                        <input asp-for="Metros" id="Metros" class="form-control" type="number" step="1" min="0" />
+                        <span asp-validation-for="Metros" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-section-title">📐 Metros cuadrados <span class="hint">(opcional)</span></div>
+                        <input asp-for="MetrosCuadrados" id="MetrosCuadrados" class="form-control" type="number" step="1" min="0" />
+                        <span asp-validation-for="MetrosCuadrados" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-section-title">📝 Descripción <span class="hint">(opcional)</span></div>
+                        <textarea asp-for="Descripcion" class="form-control" rows="3" placeholder="Resumen breve de la propiedad…"></textarea>
+                        <span asp-validation-for="Descripcion" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-section-title">🔧 Mejoras <span class="hint">(opcional)</span></div>
+                        <input asp-for="Mejoras" class="form-control" placeholder="Ej.: Piscina, Cisterna, Portón eléctrico" />
+                        <span asp-validation-for="Mejoras" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-section-title">🖼 Imagen principal</div>
+                        <input id="ImagenPrincipal" name="ImagenPrincipal" type="file" accept="image/*" class="form-control" required />
+                        <img id="preview" class="img-preview mt-2" alt="Vista previa" />
+                        <div class="hint mt-1">Formatos: jpg, jpeg, png · Máx. 10MB</div>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-2 justify-content-end mt-4">
+                    <a class="btn btn-light" href="@Url.Action("HomeAgente", "Agente")">Cancelar</a>
+                    <button type="submit" id="btnPublicar" class="btn btn-success">
+                        <i class="bi bi-upload me-1"></i> Publicar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        (function(){
+          const form = document.getElementById('formPublicar');
+          const btn  = document.getElementById('btnPublicar');
+          const fileInput = document.getElementById('ImagenPrincipal');
+          const preview = document.getElementById('preview');
+          const HOME_AGENTE_URL='@Url.Action("HomeAgente", "Agente")';
+
+   
+          fileInput.addEventListener('change', () => {
+            const f = fileInput.files?.[0];
+            if(!f){ preview.style.display='none'; preview.src=''; return; }
+            const ok = ['image/jpeg','image/png','image/jpg'].includes(f.type) && f.size <= 10*1024*1024;
+            if(!ok){ preview.style.display='none'; preview.src=''; return; }
+            const url = URL.createObjectURL(f);
+            preview.src = url; preview.style.display='block';
+          });
+
+          function setLoading(on){
+            btn.disabled = !!on;
+            if(on){ btn.dataset.originalText=btn.innerHTML; btn.innerHTML='<span class="spinner-border spinner-border-sm me-2"></span>Publicando…'; }
+            else  { btn.innerHTML = btn.dataset.originalText || 'Publicar'; }
+          }
+
+          function normalizeDec(el){ if(el) el.value = (el.value||'').replace(',','.'); }
+
+          form.addEventListener('submit', async (e)=>{
+            e.preventDefault();
+
+            const f = fileInput.files?.[0];
+            if(!f){ Swal.fire("❌ Error","Debes seleccionar una imagen principal.","error"); return; }
+            if(!['image/jpeg','image/png','image/jpg'].includes(f.type)){ Swal.fire("❌ Error","Formato inválido. Usa JPG o PNG.","error"); return; }
+            if(f.size>10*1024*1024){ Swal.fire("❌ Error","La imagen supera los 10 MB.","error"); return; }
+
+            if(window.$ && typeof $.fn.valid==='function' && !$(form).valid()){
+              Swal.fire("❌ Error","Completa los campos obligatorios.","error"); return;
+            }
+
+            setLoading(true);
+            try{
+              normalizeDec(document.getElementById('Precio'));
+
+              const fd=new FormData(form);
+              fd.set('ImagenPrincipal', f, f.name);
+
+              const token=form.querySelector('input[name="__RequestVerificationToken"]')?.value||'';
+              if(!fd.has('__RequestVerificationToken')) fd.append('__RequestVerificationToken', token);
+
+              const resp=await fetch(form.action,{
+                method:'POST',
+                body:fd,
+                headers:{'X-Requested-With':'XMLHttpRequest','RequestVerificationToken':token},
+                credentials:'same-origin'
+              });
+
+              const ct=resp.headers.get('content-type')||'';
+              if(ct.includes('application/json')){
+                const data=await resp.json();
+                if(resp.ok && (data.success===true||data.ok===true)){
+                  Swal.fire("✅ Publicado con éxito", data.message||"Propiedad publicada.","success")
+                    .then(()=>window.location.href=data.redirectUrl||HOME_AGENTE_URL);
+                }else{
+                  Swal.fire("❌ Error", data.message||"Ocurrió un problema al publicar.","error");
+                }
+                return;
+              }
+
+              if(resp.redirected){ window.location.href=resp.url||HOME_AGENTE_URL; return; }
+              if(resp.ok){
+                Swal.fire("✅ Publicado con éxito","Propiedad publicada.","success")
+                  .then(()=>window.location.href=HOME_AGENTE_URL);
+              }else{
+                Swal.fire("❌ Error","Ocurrió un problema al publicar.","error");
+              }
+            }catch(err){
+              console.error(err);
+              Swal.fire("❌ Error","Error de red o servidor.","error");
+            }finally{ setLoading(false); }
+          });
+        })();
+    </script>
+}

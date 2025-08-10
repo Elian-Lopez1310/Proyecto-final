@@ -1,0 +1,95 @@
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.csproj.AssemblyReference.cache
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.AssemblyInfoInputs.cache
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.AssemblyInfo.cs
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Negocio.deps.json
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Negocio.dll
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Negocio.pdb
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Datos.dll
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Entidades.dll
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Datos.pdb
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Entidades.pdb
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEsta.C0F3677D.Up2Date
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.dll
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\refint\RealEstateApp.Negocio.dll
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.pdb
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\ref\RealEstateApp.Negocio.dll
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Shared.dll
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Shared.pdb
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Negocio.deps.json
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Negocio.dll
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Negocio.pdb
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Datos.dll
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Entidades.dll
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Shared.dll
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Datos.pdb
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Entidades.pdb
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Shared.pdb
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.csproj.AssemblyReference.cache
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.GeneratedMSBuildEditorConfig.editorconfig
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.AssemblyInfoInputs.cache
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.AssemblyInfo.cs
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.csproj.CoreCompileInputs.cache
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEsta.C0F3677D.Up2Date
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.dll
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\obj\Debug\net8.0\refint\RealEstateApp.Negocio.dll
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.pdb
+D:\ssss\vs.zipppp\RealEstateApp.Negocio\obj\Debug\net8.0\ref\RealEstateApp.Negocio.dll
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Negocio.deps.json
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Negocio.dll
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Negocio.pdb
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Datos.dll
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Entidades.dll
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Shared.dll
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Datos.pdb
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Entidades.pdb
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Shared.pdb
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.csproj.AssemblyReference.cache
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.GeneratedMSBuildEditorConfig.editorconfig
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.AssemblyInfoInputs.cache
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.AssemblyInfo.cs
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.csproj.CoreCompileInputs.cache
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEsta.C0F3677D.Up2Date
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.dll
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\refint\RealEstateApp.Negocio.dll
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.pdb
+D:\aaaaa\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\ref\RealEstateApp.Negocio.dll
+D:\ssssss\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Negocio.deps.json
+D:\ssssss\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Negocio.dll
+D:\ssssss\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Negocio.pdb
+D:\ssssss\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Datos.dll
+D:\ssssss\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Entidades.dll
+D:\ssssss\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Shared.dll
+D:\ssssss\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Datos.pdb
+D:\ssssss\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Entidades.pdb
+D:\ssssss\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Shared.pdb
+D:\ssssss\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.csproj.AssemblyReference.cache
+D:\ssssss\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.GeneratedMSBuildEditorConfig.editorconfig
+D:\ssssss\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.AssemblyInfoInputs.cache
+D:\ssssss\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.AssemblyInfo.cs
+D:\ssssss\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.csproj.CoreCompileInputs.cache
+D:\ssssss\RealEstateApp.Negocio\obj\Debug\net8.0\RealEsta.C0F3677D.Up2Date
+D:\ssssss\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.dll
+D:\ssssss\RealEstateApp.Negocio\obj\Debug\net8.0\refint\RealEstateApp.Negocio.dll
+D:\ssssss\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.pdb
+D:\ssssss\RealEstateApp.Negocio\obj\Debug\net8.0\ref\RealEstateApp.Negocio.dll
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Negocio.deps.json
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Negocio.dll
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Negocio.pdb
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Datos.dll
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Entidades.dll
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Shared.dll
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Datos.pdb
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Entidades.pdb
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\bin\Debug\net8.0\RealEstateApp.Shared.pdb
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.csproj.AssemblyReference.cache
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.GeneratedMSBuildEditorConfig.editorconfig
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.AssemblyInfoInputs.cache
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.AssemblyInfo.cs
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.csproj.CoreCompileInputs.cache
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEsta.C0F3677D.Up2Date
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.dll
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\refint\RealEstateApp.Negocio.dll
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\RealEstateApp.Negocio.pdb
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Negocio\obj\Debug\net8.0\ref\RealEstateApp.Negocio.dll

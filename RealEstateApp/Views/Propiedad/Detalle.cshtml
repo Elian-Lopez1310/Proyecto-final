@@ -1,0 +1,854 @@
+﻿@using System
+@using System.Linq
+@model RealEstateApp.Web.ViewModels.DetallePropiedadViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Detalle de la Propiedad";
+
+    // <- viene del controlador
+    bool esAgente = (ViewBag.EsAgente as bool?) ?? false;
+
+    string Norm(string raw)
+    {
+        if (string.IsNullOrWhiteSpace(raw)) return null;
+        raw = raw.Trim();
+        if (raw.StartsWith("http://", StringComparison.OrdinalIgnoreCase) ||
+            raw.StartsWith("https://", StringComparison.OrdinalIgnoreCase)) return raw;
+        if (raw.StartsWith("~/")) return "/" + raw[2..].TrimStart('/');
+        if (raw.StartsWith("/")) return raw;
+        return "/" + raw.TrimStart('/');
+    }
+
+    // Fallback por código
+    string ByCode(string code) => "/images/propiedades/Apartamento.jpg";
+
+    var imagenPrincipal = Norm(Model.ImagenPrincipal) ?? ByCode(Model.Codigo) ?? "/images/default.png";
+
+    var agenteNombre = string.IsNullOrWhiteSpace(Model.AgenteNombre) ? "No asignado" : Model.AgenteNombre;
+    var agenteFoto = Norm(Model.AgenteFoto) ?? "/images/agentes/default.png";
+    var agenteTelefono = string.IsNullOrWhiteSpace(Model.AgenteTelefono) ? "No disponible" : Model.AgenteTelefono;
+    var agenteCorreo = string.IsNullOrWhiteSpace(Model.AgenteCorreo) ? "No disponible" : Model.AgenteCorreo;
+    bool hayAgente = !string.Equals(agenteNombre, "No asignado", StringComparison.OrdinalIgnoreCase);
+
+    string telDigits = new string((Model.AgenteTelefono ?? "").Where(char.IsDigit).ToArray());
+    string linkWhatsapp = (!string.IsNullOrWhiteSpace(telDigits)) ? $"https://wa.me/{telDigits}" : null;
+
+    var metrosMostrar = Model.MetrosCuadrados > 0 ? Model.MetrosCuadrados : (Model.Metros > 0 ? Model.Metros : 0);
+}
+
+<style>
+    .detalle-container {
+        background: #f8f9fa;
+        padding: 40px 20px
+    }
+
+    .img-principal {
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+        border-radius: 12px
+    }
+
+    .seccion-titulo {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 20px
+    }
+
+    .list-group-item {
+        border: none;
+        padding: .5rem 0;
+        font-size: 1.05rem
+    }
+
+    .agente-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,.08);
+        text-align: center
+    }
+
+        .agente-card img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: 3px solid #dee2e6
+        }
+
+    .btn-whatsapp {
+        background: #25D366;
+        color: #fff;
+        font-weight: 600
+    }
+
+        .btn-whatsapp:hover {
+            background: #1ebe5d;
+            color: #fff
+        }
+
+    .imagen-container {
+        margin-bottom: 30px
+    }
+
+    /* Chat cliente (lado público) */
+    .chat-wrapper {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,.08);
+        display: flex;
+        flex-direction: column;
+        min-height: 420px
+    }
+
+    .chat-header {
+        padding: 12px 16px;
+        border-bottom: 1px solid #eee;
+        font-weight: 600
+    }
+
+    .chat-body {
+        padding: 16px;
+        height: 300px;
+        overflow-y: auto
+    }
+
+    .chat-footer {
+        padding: 12px;
+        border-top: 1px solid #eee
+    }
+
+    .msg {
+        max-width: 80%;
+        padding: 10px 12px;
+        border-radius: 14px;
+        margin-bottom: 10px;
+        position: relative;
+        word-break: break-word
+    }
+
+        .msg.agente {
+            background: #6f7cff;
+            color: #fff;
+            margin-left: auto;
+            border-bottom-right-radius: 4px
+        }
+
+        .msg.cliente {
+            background: #eef1ff;
+            color: #2d2d2d;
+            margin-right: auto;
+            border-bottom-left-radius: 4px
+        }
+
+        .msg time {
+            display: block;
+            font-size: .75rem;
+            opacity: .85;
+            margin-top: 4px
+        }
+
+    .chat-empty {
+        color: #888;
+        text-align: center;
+        margin-top: 30px
+    }
+
+    .estado-badge {
+        font-size: .8rem
+    }
+
+    /* Inbox de clientes (AGENTE) */
+    .chat-inbox {
+        border: 0;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(32,40,45,.06);
+        overflow: hidden;
+        background: #fff
+    }
+
+    .chat-inbox__header {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 16px;
+        border-bottom: 1px solid #eef0f2;
+        background: linear-gradient(180deg,#ffffff,#f7f9ff)
+    }
+
+    .chat-inbox__title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700
+    }
+
+        .chat-inbox__title .icon {
+            width: 28px;
+            height: 28px;
+            display: inline-grid;
+            place-items: center;
+            border-radius: 10px;
+            background: #eef1ff
+        }
+
+    .chat-inbox__tools {
+        display: flex;
+        gap: 8px;
+        align-items: center
+    }
+
+    .chat-inbox__search {
+        max-width: 240px
+    }
+
+    .chat-inbox__list a {
+        padding: 14px 16px;
+        border-bottom: 1px solid #f2f3f5;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        color: inherit
+    }
+
+        .chat-inbox__list a:last-child {
+            border-bottom: none
+        }
+
+        .chat-inbox__list a:hover {
+            background: #f8fbff
+        }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: inline-grid;
+        place-items: center;
+        font-weight: 700;
+        background: #e9efff;
+        color: #445;
+        flex: 0 0 40px
+    }
+
+    .client-meta {
+        display: flex;
+        flex-direction: column;
+        min-width: 0
+    }
+
+    .client-name {
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 8px
+    }
+
+    .client-last {
+        font-size: .9rem;
+        color: #6b7280;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 520px
+    }
+
+    .client-right {
+        margin-left: auto;
+        text-align: right;
+        font-size: .82rem;
+        color: #9aa1a9
+    }
+
+    .badge-unread {
+        font-size: .72rem
+    }
+
+    /* Ofertas para AGENTE */
+    .offers-card {
+        background: #fff;
+        border: 0;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(32,40,45,.06)
+    }
+</style>
+
+<div class="container-fluid detalle-container">
+    <!-- AntiForgery util para fetch -->
+    <form id="__af">@Html.AntiForgeryToken()</form>
+
+    <!-- Imagen principal -->
+    <div class="row justify-content-center imagen-container">
+        <div class="col-md-10">
+            <img src="@imagenPrincipal"
+                 asp-append-version="true"
+                 class="img-principal w-100"
+                 alt="Imagen principal de la propiedad"
+                 loading="lazy"
+                 onerror="this.onerror=null; this.src='@ByCode(Model.Codigo)'; if(!this.src){ this.src='/images/default.png'; }" />
+        </div>
+    </div>
+
+    <!-- Info + Agente -->
+    <div class="row justify-content-center mb-4">
+        <div class="col-md-10">
+            <div class="row">
+                <!-- Propiedad -->
+                <div class="col-lg-6 mb-4">
+                    <h2 class="seccion-titulo">
+                        @(string.IsNullOrWhiteSpace(Model.Tipo) ? "Propiedad" : Model.Tipo)
+                        <small class="text-muted">· Código: @Model.Codigo</small>
+                    </h2>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Tipo de venta:</strong> @Model.TipoVenta</li>
+                        <li class="list-group-item"><strong>Precio:</strong> US$ @Model.Precio.ToString("N2")</li>
+                        <li class="list-group-item"><strong>Habitaciones:</strong> @Model.Habitaciones</li>
+                        <li class="list-group-item"><strong>Baños:</strong> @Model.Banos</li>
+                        <li class="list-group-item"><strong>Metros cuadrados:</strong> @metrosMostrar m²</li>
+                    </ul>
+
+                    @if (!string.IsNullOrWhiteSpace(Model.Descripcion))
+                    {
+                        <h5 class="mt-4">Descripción</h5>
+                        <p class="text-muted">@Model.Descripcion</p>
+                    }
+
+                    @if (Model.Imagenes != null && Model.Imagenes.Count > 0)
+                    {
+                        <h5 class="mt-4">Galería</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            @foreach (var img in Model.Imagenes)
+                            {
+                                var url = Norm(img);
+                                if (!string.IsNullOrWhiteSpace(url))
+                                {
+                                    <img src="@url" asp-append-version="true"
+                                         alt="Imagen galería"
+                                         style="width:120px;height:90px;object-fit:cover;border-radius:8px"
+                                         loading="lazy"
+                                         onerror="this.style.display='none';" />
+                                }
+                            }
+                        </div>
+                    }
+                </div>
+
+                <!-- Agente -->
+                <div class="col-lg-6 mb-4">
+                    <div class="agente-card">
+                        <img src="@agenteFoto" asp-append-version="true" alt="Foto del agente" loading="lazy"
+                             onerror="this.onerror=null; this.src='/images/agentes/default.png';" />
+                        <h5 class="mb-1">@agenteNombre</h5>
+                        <p class="mb-1">📞 @agenteTelefono</p>
+                        <p class="mb-3">📧 @agenteCorreo</p>
+
+                        @* Botón WhatsApp solo para clientes *@
+                        @if (!esAgente && !Model.EsPropiedadDelAgenteActual && hayAgente && !string.IsNullOrWhiteSpace(linkWhatsapp))
+                        {
+                            <a class="btn btn-whatsapp w-100 mt-1" href="@linkWhatsapp" target="_blank" rel="noopener">
+                                💬 Contactar por WhatsApp
+                            </a>
+                        }
+                        @if (Model.EsPropiedadDelAgenteActual)
+                        {
+                            <div class="alert alert-info mt-3 mb-0">Esta es una de tus propiedades publicadas.</div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* ===== Panel para AGENTE DUEÑO: listado de clientes con chat ===== *@
+    @if (Model.EsPropiedadDelAgenteActual)
+    {
+        <div class="row justify-content-center mt-2">
+            <div class="col-md-10">
+                <div class="chat-inbox">
+                    <div class="chat-inbox__header">
+                        <div class="chat-inbox__title">
+                            <span class="icon">
+                                <i class="bi bi-chat-left-dots"></i>
+                            </span>
+                            <span>Chat con los clientes</span>
+                        </div>
+                        <div class="chat-inbox__tools">
+                            <input id="filtroClientes" class="form-control form-control-sm chat-inbox__search" placeholder="Buscar cliente..." />
+                            <a class="btn btn-outline-primary btn-sm"
+                               href="@Url.Action("ListaClientesChat", "Agente", new { propiedadId = Model.PropiedadId })">
+                                Ver todos
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="chat-inbox__list" id="listaClientes">
+                        @if (Model.ClientesChat == null || !Model.ClientesChat.Any())
+                        {
+                            <div class="p-3 text-muted">Aún no hay conversaciones con clientes.</div>
+                        }
+                        else
+                        {
+                            foreach (var c in Model.ClientesChat)
+                            {
+                                var chatUrl = Url.Action("ChatConCliente", "Agente",
+                                new { propiedadId = Model.PropiedadId, clienteId = c.ClienteId });
+
+                                var nombre = (c.Nombre ?? string.Empty).Trim();
+                                var inicial = string.IsNullOrEmpty(nombre) ? "?" : nombre.Substring(0, 1).ToUpperInvariant();
+
+                                <a href="@chatUrl" class="cliente-item" data-nombre="@((c.Nombre ?? string.Empty).ToLower())">
+                                    <span class="avatar">@inicial</span>
+                                    <div class="client-meta">
+                                        <div class="client-name">
+                                            <span>@(string.IsNullOrEmpty(nombre) ? "Cliente" : nombre)</span>
+                                            @if (c.NoLeidos > 0)
+                                            {
+                                                <span class="badge bg-danger badge-unread">@c.NoLeidos sin leer</span>
+                                            }
+                                        </div>
+                                        <div class="client-last">@c.UltimoTexto</div>
+                                    </div>
+                                    <div class="client-right">
+                                        <div>@c.UltimaFecha.ToString("dd/MM/yyyy HH:mm")</div>
+                                    </div>
+                                </a>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @* ======= NUEVO: Ofertas recibidas (resumen por cliente) ======= *@
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-10">
+                <div class="card offers-card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <div class="fw-bold"><i class="bi bi-cash-coin me-1"></i> Ofertas recibidas</div>
+                        <small class="text-muted">Propiedad: <strong>@Model.Codigo</strong></small>
+                    </div>
+                    <div class="card-body">
+                        @if (Model.OfertasResumenAgente == null || !Model.OfertasResumenAgente.Any())
+                        {
+                            <div class="text-muted">Aún no hay ofertas para esta propiedad.</div>
+                        }
+                        else
+                        {
+                            <div class="table-responsive">
+                                <table class="table align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>Cliente</th>
+                                            <th class="text-end">Última oferta (US$)</th>
+                                            <th>Estado</th>
+                                            <th class="text-center">Pendientes</th>
+                                            <th class="text-end">Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var r in Model.OfertasResumenAgente)
+                                        {
+                                            var badge = (r.EstadoUltima ?? "").ToLower() switch
+                                            {
+                                                "aceptada" => "bg-success",
+                                                "rechazada" => "bg-danger",
+                                                _ => "bg-warning text-dark"
+                                            };
+
+                                            <tr>
+                                                <td>
+                                                    <div class="fw-semibold">@r.ClienteNombre</div>
+                                                    <div class="small text-muted">@r.UltimaFecha.ToString("dd/MM/yyyy HH:mm")</div>
+                                                </td>
+                                                <td class="text-end">US$ @r.MontoUltima.ToString("N2")</td>
+                                                <td><span class="badge @badge">@r.EstadoUltima</span></td>
+                                                <td class="text-center">
+                                                    @if (r.PendientesCount > 0)
+                                                    {
+                                                        <span class="badge bg-secondary">@r.PendientesCount</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="text-muted">0</span>
+                                                    }
+                                                </td>
+                                                <td class="text-end">
+                                                    @* Acciones rápidas si la última está pendiente *@
+                                                    @if (string.Equals(r.EstadoUltima, "Pendiente", StringComparison.OrdinalIgnoreCase))
+                                                    {
+                                                        <button type="button"
+                                                                class="btn btn-sm btn-success me-1 js-aceptar"
+                                                                data-oferta="@r.OfertaIdUltima"
+                                                                title="Aceptar oferta">
+                                                            Aceptar
+                                                        </button>
+                                                        <button type="button"
+                                                                class="btn btn-sm btn-outline-danger js-rechazar"
+                                                                data-oferta="@r.OfertaIdUltima"
+                                                                title="Rechazar oferta">
+                                                            Rechazar
+                                                        </button>
+                                                    }
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="small text-muted">
+                                Al aceptar una oferta: se marca como <strong>Aceptada</strong>, se rechazan automáticamente
+                                todas las demás ofertas <em>Pendientes</em> de esta propiedad y la propiedad queda como <strong>Vendida</strong>.
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <!-- Chat + Ofertas (lado CLIENTE) -->
+    @if (!Model.EsPropiedadDelAgenteActual)
+    {
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        @if (!esAgente)
+                        {
+                            <div class="chat-wrapper">
+                                <div class="chat-header">💬 Conversación con el agente</div>
+                                <div id="chatBody" class="chat-body">
+                                    @if (Model.Chat != null && Model.Chat.Any())
+                                    {
+                                        foreach (var m in Model.Chat.OrderBy(x => x.Fecha))
+                                        {
+                                            var cls = m.EsDelAgente ? "agente" : "cliente";
+                                            <div class="msg @cls">
+                                                @m.Texto
+                                                <time>@m.Fecha.ToString("dd MMM yyyy, HH:mm")</time>
+                                            </div>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <div class="chat-empty">No hay mensajes todavía. ¡Escribe el primero!</div>
+                                    }
+                                </div>
+                                <div class="chat-footer">
+                                    <form id="formChat" class="d-flex gap-2" autocomplete="off"
+                                          action="/Chat/EnviarMensaje" method="post">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="PropiedadId" value="@Model.PropiedadId" />
+                                        <input id="txtMensaje" name="Texto" class="form-control" placeholder="Escribe un mensaje..." />
+                                        <button id="btnEnviarChat" type="submit" class="btn btn-primary">Enviar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="alert alert-light">
+                                Estás logueado como <strong>Agente</strong>. El chat público se muestra a clientes.
+                            </div>
+                        }
+                    </div>
+
+                    <div class="col-lg-6">
+                        @if (!esAgente)
+                        {
+                            <div class="card shadow-sm">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <span>💵 Ofertas por esta propiedad</span>
+                                    <button class="btn btn-success"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#modalOferta"
+                                            @(Model.SePuedeOfertar ? null : "disabled")
+                                            title="@(Model.SePuedeOfertar ? "Enviar nueva oferta" : "No disponible para ofertar")">
+                                        Nueva oferta
+                                    </button>
+                                </div>
+
+                                <div class="card-body">
+                                    @if (Model.Ofertas != null && Model.Ofertas.Any())
+                                    {
+                                        <div class="table-responsive">
+                                            <table class="table align-middle">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Fecha</th>
+                                                        <th>Monto</th>
+                                                        <th>Estado</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach (var o in Model.Ofertas.OrderByDescending(x => x.Fecha))
+                                                    {
+                                                        var badge = o.Estado?.ToLower() switch
+                                                        {
+                                                            "aceptada" => "bg-success",
+                                                            "rechazada" => "bg-danger",
+                                                            _ => "bg-warning text-dark"
+                                                        };
+                                                        <tr>
+                                                            <td>@o.Fecha.ToString("dd/MM/yyyy HH:mm")</td>
+                                                            <td>US$ @o.Monto.ToString("N2")</td>
+                                                            <td><span class="badge estado-badge @badge">@o.Estado</span></td>
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="text-muted">Aún no hay ofertas registradas.</div>
+                                    }
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        @* Modal Nueva Oferta (solo CLIENTES) *@
+        @if (!esAgente)
+        {
+            <div class="modal fade" id="modalOferta" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form id="formOferta" action="/Oferta/Crear" method="post">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Enviar nueva oferta</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="PropiedadId" value="@Model.PropiedadId" />
+                                <label class="form-label">Monto ofertado (US$)</label>
+                                <input type="number" step="0.01" min="1" class="form-control" name="Monto" required />
+                                <small class="text-muted">La oferta se creará en estado <strong>Pendiente</strong>.</small>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-success">Enviar oferta</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@section Scripts {
+    <script>
+    
+        function __getAF() {
+            const f = document.getElementById('__af');
+            const t = f?.querySelector('input[name="__RequestVerificationToken"]');
+            return t ? t.value : '';
+        }
+
+        (function () {
+            const input = document.getElementById('filtroClientes');
+            const lista = document.getElementById('listaClientes');
+            if (!input || !lista) return;
+
+            input.addEventListener('input', () => {
+                const q = (input.value || '').trim().toLowerCase();
+                lista.querySelectorAll('.cliente-item').forEach(el => {
+                    const nom = el.getAttribute('data-nombre') || '';
+                    el.style.display = nom.includes(q) ? '' : 'none';
+                });
+            });
+        })();
+
+
+        (function () {
+            const onClick = async (btn, aceptar) => {
+                const ofertaId = btn.getAttribute('data-oferta');
+                if (!ofertaId) return;
+
+                const ok = confirm(aceptar
+                    ? '¿Aceptar esta oferta? Se marcará la propiedad como VENDIDA y se rechazarán las demás pendientes.'
+                    : '¿Rechazar esta oferta?');
+                if (!ok) return;
+
+                try {
+                    btn.disabled = true;
+
+                    const fd = new FormData();
+                    fd.append('ofertaId', ofertaId);
+                    fd.append('aceptar', aceptar ? 'true' : 'false');
+                    fd.append('propiedadId', '@Model.PropiedadId'); 
+
+                    const res = await fetch('/Oferta/Responder', {
+                        method: 'POST',
+                        headers: { 'RequestVerificationToken': __getAF() },
+                        body: fd,
+                        credentials: 'same-origin'
+                    });
+
+                    if (!res.ok) throw new Error('HTTP ' + res.status);
+                    const json = await res.json();
+
+                    if (json?.success) {
+                        location.reload();
+                    } else {
+                        alert(json?.message || 'No se pudo actualizar la oferta.');
+                        btn.disabled = false;
+                    }
+                } catch (e) {
+                    console.error(e);
+                    alert('Error de red.');
+                    btn.disabled = false;
+                }
+            };
+
+            document.querySelectorAll('.js-aceptar').forEach(b => {
+                b.addEventListener('click', () => onClick(b, true));
+            });
+            document.querySelectorAll('.js-rechazar').forEach(b => {
+                b.addEventListener('click', () => onClick(b, false));
+            });
+        })();
+    </script>
+
+    @*  *@
+    @if (!Model.EsPropiedadDelAgenteActual && !esAgente)
+    {
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+        <script>
+            function getRequestVerificationToken(form) {
+                const input = form.querySelector('input[name="__RequestVerificationToken"]');
+                return input ? input.value : '';
+            }
+
+            const formChat = document.getElementById('formChat');
+            const chatBody = document.getElementById('chatBody');
+            const txtMensaje = document.getElementById('txtMensaje');
+
+            formChat?.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const token = getRequestVerificationToken(formChat);
+                const data = new FormData(formChat);
+                if (!txtMensaje.value.trim()) return;
+
+                const res = await fetch('/Chat/EnviarMensaje', {
+                    method: 'POST',
+                    headers: { 'RequestVerificationToken': token },
+                    body: data,
+                    credentials: 'same-origin'
+                });
+
+                const json = await res.json();
+                if (json?.success) {
+                    txtMensaje.value = '';
+                    await cargarChat();
+                    try {
+                        const usuario = '@(User?.Identity?.Name ?? "Cliente")';
+                        connection?.invoke('EnviarMensaje', usuario, '[nuevo]').catch(()=>{});
+                    } catch {}
+                } else {
+                    alert(json?.message || 'No se pudo enviar el mensaje.');
+                }
+            });
+
+            async function cargarChat() {
+                try {
+                    const res = await fetch('/Chat/ListarMensajes?propiedadId=@Model.PropiedadId', { method: 'GET', credentials: 'same-origin' });
+                    const json = await res.json();
+                    if (!json?.success) return;
+
+                    chatBody.innerHTML = '';
+                    if (!json.data || json.data.length === 0) {
+                        chatBody.innerHTML = '<div class="chat-empty">No hay mensajes todavía. ¡Escribe el primero!</div>';
+                        return;
+                    }
+
+                    json.data
+                        .sort((a,b)=> new Date(a.fecha) - new Date(b.fecha))
+                        .forEach(m => {
+                            const cls = m.esDelAgente ? 'agente' : 'cliente';
+                            const div = document.createElement('div');
+                            div.className = 'msg ' + cls;
+
+                            // Texto seguro
+                            const span = document.createElement('span');
+                            span.textContent = m.texto ?? '';
+                            div.appendChild(span);
+
+                            // Tiempo
+                            const fecha = new Date(m.fecha);
+                            const timeEl = document.createElement('time');
+                            timeEl.textContent = fecha.toLocaleString();
+                            div.appendChild(timeEl);
+
+                            chatBody.appendChild(div);
+                        });
+
+                    chatBody.scrollTop = chatBody.scrollHeight;
+                } catch(e) { console.error(e); }
+            }
+            cargarChat();
+            setInterval(cargarChat, 5000);
+
+            const formOferta = document.getElementById('formOferta');
+            formOferta?.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const btnSubmit = formOferta.querySelector('button[type="submit"]');
+                btnSubmit && (btnSubmit.disabled = true);
+
+                try {
+                    const token = getRequestVerificationToken(formOferta);
+                    const data = new FormData(formOferta);
+
+                    const res = await fetch('/Oferta/Crear', {
+                        method: 'POST',
+                        headers: { 'RequestVerificationToken': token },
+                        body: data,
+                        credentials: 'same-origin'
+                    });
+
+                    if (!res.ok) throw new Error('HTTP ' + res.status);
+                    const json = await res.json();
+
+                    if (json?.success) {
+                        const modalEl = document.getElementById('modalOferta');
+                        const modal = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
+                        modal?.hide();
+                        location.reload();
+                    } else {
+                        alert(json?.message || 'No se pudo crear la oferta.');
+                        btnSubmit && (btnSubmit.disabled = false);
+                    }
+                } catch (err) {
+                    console.error(err);
+                    alert('Error de red.');
+                    btnSubmit && (btnSubmit.disabled = false);
+                }
+            });
+
+            let connection = null;
+            (async function initSignalR(){
+                try{
+                    connection = new signalR.HubConnectionBuilder().withUrl("/chathub").build();
+                    connection.on("RecibirMensaje", async () => { await cargarChat(); });
+                    await connection.start();
+                }catch(err){
+                    console.warn('SignalR no disponible aún:', err);
+                }
+            })();
+        </script>
+    }
+}
+
+

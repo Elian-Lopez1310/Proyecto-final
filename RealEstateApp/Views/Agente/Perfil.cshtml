@@ -1,0 +1,60 @@
+﻿@model RealEstateApp.Shared.Dtos.AgentePerfilDto
+
+@{
+    ViewData["Title"] = "Mi Perfil";
+    Layout = "~/Views/Shared/_LayoutAgente.cshtml";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4"><i class="bi bi-person-circle"></i> Mi Perfil</h2>
+
+    @if (TempData["Mensaje"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle-fill"></i> @TempData["Mensaje"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+        </div>
+    }
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Nombre</label>
+                <input type="text" class="form-control" value="@Model.Nombre" readonly />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Apellido</label>
+                <input type="text" class="form-control" value="@Model.Apellido" readonly />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Teléfono</label>
+                <input type="text" class="form-control" value="@Model.Telefono" readonly />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Foto actual</label><br />
+                @if (!string.IsNullOrEmpty(Model.FotoUrl))
+                {
+                    <img src="@Model.FotoUrl" alt="Foto del agente" class="rounded-circle shadow-sm" width="120" height="120" style="object-fit: cover;" />
+                }
+                else
+                {
+                    <p class="text-muted">Sin foto registrada.</p>
+                }
+            </div>
+
+            <div class="d-flex justify-content-between mt-4">
+                <a href="/Agente/HomeAgente" class="btn btn-secondary">
+                    <i class="bi bi-arrow-left-circle"></i> Volver
+                </a>
+                <a href="/Agente/EditarPerfil" class="btn btn-outline-primary">
+                    <i class="bi bi-pencil-square"></i> Editar perfil
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>

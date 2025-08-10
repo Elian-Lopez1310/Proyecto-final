@@ -1,0 +1,52 @@
+﻿@model RealEstateApp.Web.ViewModels.AgenteOfertasClienteVM
+@{
+    ViewData["Title"] = "Ofertas del cliente";
+    Layout = "~/Views/Shared/_LayoutAgente.cshtml";
+}
+<div class="container mt-4">
+    <h3>💵 @Model.ClienteNombre · Propiedad @Model.CodigoPropiedad</h3>
+
+    @if (!Model.Ofertas.Any())
+    {
+        <div class="alert alert-info mt-3">Este cliente no tiene ofertas.</div>
+    }
+    else
+    {
+        <div class="table-responsive mt-3">
+            <table class="table align-middle">
+                <thead>
+                    <tr><th>Fecha</th><th>Monto</th><th>Estado</th><th></th></tr>
+                </thead>
+                <tbody>
+                    @foreach (var o in Model.Ofertas)
+                    {
+                        var badge = o.Estado.ToLower() switch
+                        {
+                            "aceptada" => "bg-success",
+                            "rechazada" => "bg-danger",
+                            _ => "bg-warning text-dark"
+                        };
+                        <tr>
+                            <td>@o.Fecha.ToString("dd/MM/yyyy HH:mm")</td>
+                            <td>US$ @o.Monto.ToString("N2")</td>
+                            <td><span class="badge @badge">@o.Estado</span></td>
+                            <td class="text-end">
+                                @if (o.PuedeResponder && !Model.HayAceptada)
+                                {
+                                    <form class="d-inline" method="post" action="@Url.Action("Aceptar","AgentePropiedad", new { propiedadId = Model.PropiedadId, ofertaId = o.OfertaId })">
+                                        @Html.AntiForgeryToken()
+                                        <button class="btn btn-sm btn-success" onclick="return confirm('¿Aceptar esta oferta? Se marcarán las demás como Rechazadas y la propiedad quedará Vendida.');">Aceptar</button>
+                                    </form>
+                                    <form class="d-inline" method="post" action="@Url.Action("Rechazar","AgentePropiedad", new { propiedadId = Model.PropiedadId, ofertaId = o.OfertaId })">
+                                        @Html.AntiForgeryToken()
+                                        <button class="btn btn-sm btn-outline-danger" onclick="return confirm('¿Rechazar esta oferta?');">Rechazar</button>
+                                    </form>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

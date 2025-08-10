@@ -1,0 +1,124 @@
+﻿@model RealEstateApp.ViewModels.RegistroUsuarioViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Registro de Usuario";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <div class="card shadow-lg border-0">
+                <div class="card-header text-white text-center bg-primary">
+                    <h4 class="mb-0">📝 Registro de Usuario</h4>
+                </div>
+                <div class="card-body px-4">
+
+                    <div id="alertaAjax"></div>
+
+                    <form id="formRegistro" enctype="multipart/form-data" class="needs-validation" novalidate>
+                        @Html.AntiForgeryToken()
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label asp-for="Nombre" class="form-label">Nombre</label>
+                                <input asp-for="Nombre" name="Nombre" class="form-control form-control-lg" placeholder="Ej: Juan" />
+                                <span asp-validation-for="Nombre" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Apellido" class="form-label">Apellido</label>
+                                <input asp-for="Apellido" name="Apellido" class="form-control form-control-lg" placeholder="Ej: Pérez" />
+                                <span asp-validation-for="Apellido" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 mt-3">
+                            <label asp-for="Telefono" class="form-label">Teléfono</label>
+                            <input asp-for="Telefono" name="Telefono" class="form-control form-control-lg" placeholder="Ej: 809-123-4567" />
+                            <span asp-validation-for="Telefono" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Foto" class="form-label">Foto de perfil</label>
+                            <input asp-for="Foto" name="Foto" type="file" class="form-control form-control-lg" accept="image/*" />
+                            <span asp-validation-for="Foto" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="NombreUsuario" class="form-label">Nombre de Usuario</label>
+                            <input asp-for="NombreUsuario" name="NombreUsuario" class="form-control form-control-lg" placeholder="Ej: juanp123" />
+                            <span asp-validation-for="NombreUsuario" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Correo" class="form-label">Correo electrónico</label>
+                            <input asp-for="Correo" name="Correo" type="email" class="form-control form-control-lg" placeholder="correo@email.com" />
+                            <span asp-validation-for="Correo" class="text-danger"></span>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label asp-for="Contrasena" class="form-label">Contraseña</label>
+                                <input asp-for="Contrasena" name="Contrasena" type="password" class="form-control form-control-lg" placeholder="********" />
+                                <span asp-validation-for="Contrasena" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="ConfirmarClave" class="form-label">Confirmar Contraseña</label>
+                                <input asp-for="ConfirmarClave" name="ConfirmarClave" type="password" class="form-control form-control-lg" placeholder="********" />
+                                <span asp-validation-for="ConfirmarClave" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 mt-3">
+                            <label asp-for="TipoUsuario" class="form-label">Tipo de Usuario</label>
+                            <select asp-for="TipoUsuario" name="TipoUsuario" class="form-select form-select-lg">
+                                <option value="">Seleccione...</option>
+                                <option value="Cliente">Cliente</option>
+                                <option value="Agente">Agente</option>
+                            </select>
+                            <span asp-validation-for="TipoUsuario" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success btn-lg">
+                                ✅ Registrarse
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="text-center mt-3">
+                        ¿Ya tienes cuenta? <a asp-controller="Cuenta" asp-action="Login">Inicia sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.querySelector('#formRegistro').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const formData = new FormData(form);
+
+            const response = await fetch('/Cuenta/Registro', {
+                method: 'POST',
+                body: formData
+            });
+
+            const result = await response.json();
+            const alerta = document.getElementById('alertaAjax');
+
+            if (result.success) {
+                alerta.innerHTML = `<div class="alert alert-success text-center fw-bold">${result.message}</div>`;
+                setTimeout(() => {
+                    window.location.href = "/Cuenta/Login";
+                }, 2000);
+            } else {
+                alerta.innerHTML = `<div class="alert alert-danger text-center fw-bold">${result.message}</div>`;
+            }
+        });
+    </script>
+}

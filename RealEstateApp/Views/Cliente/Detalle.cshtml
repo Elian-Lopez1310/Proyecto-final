@@ -1,0 +1,49 @@
+﻿
+
+<hr />
+<h4 class="mt-4">💬 Contactar al agente</h4>
+<div id="chatBox" class="border p-3 rounded bg-light mb-4" style="height: 300px; overflow-y: auto;">
+    
+</div>
+
+<div class="input-group mb-5">
+    <input type="text" id="mensajeChat" class="form-control" placeholder="Escribe un mensaje..." />
+    <button class="btn btn-primary" id="btnEnviarMensaje">Enviar</button>
+</div>
+
+<hr />
+<h4 class="mt-4">💰 Ofertas realizadas</h4>
+<button class="btn btn-success mb-2" id="btnNuevaOferta" disabled>➕ Nueva Oferta</button>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Cifra Ofertada</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody id="tablaOfertas">
+     
+    </tbody>
+</table>
+
+
+<div class="modal fade" id="modalOferta" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="formOferta">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nueva Oferta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="number" class="form-control" name="Monto" placeholder="Ingrese su oferta en USD" required />
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Enviar Oferta</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

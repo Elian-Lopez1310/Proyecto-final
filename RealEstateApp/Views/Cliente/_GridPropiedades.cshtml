@@ -1,0 +1,87 @@
+﻿@using RealEstateApp.Web.ViewModels
+@model FiltroPropiedadViewModel
+
+@{
+    string Norm(string raw)
+    {
+        if (string.IsNullOrWhiteSpace(raw)) return null;
+        raw = raw.Trim();
+        if (raw.Equals("null", StringComparison.OrdinalIgnoreCase)) return null;
+
+        if (raw.StartsWith("http://", StringComparison.OrdinalIgnoreCase) ||
+            raw.StartsWith("https://", StringComparison.OrdinalIgnoreCase))
+            return raw;
+
+        if (raw.StartsWith("~/")) return "/" + raw[2..].TrimStart('/');
+        if (raw.StartsWith("/")) return raw;
+        return "/" + raw;
+    }
+
+    string ToSrc(string candidate)
+    {
+        var r = Norm(candidate) ?? "/images/default.png";
+
+        // externa → tal cual
+        if (r.StartsWith("http://", StringComparison.OrdinalIgnoreCase) ||
+            r.StartsWith("https://", StringComparison.OrdinalIgnoreCase))
+            return r;
+
+        // local → absolutiza respetando PathBase
+        return Url.Content("~/" + r.TrimStart('/'));
+    }
+}
+
+@if (Model?.Resultados == null || !Model.Resultados.Any())
+{
+    <div class="alert alert-warning text-center">No se encontraron propiedades.</div>
+}
+else
+{
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 justify-content-center">
+        @foreach (var item in Model.Resultados)
+        {
+ 
+            var first = !string.IsNullOrWhiteSpace(item.ImagenUrl) ? item.ImagenUrl
+            : !string.IsNullOrWhiteSpace(item.FotoPrincipal) ? item.FotoPrincipal
+            : "/images/default.png";
+
+  
+            var resolved = Norm(first) ?? "/images/default.png";
+
+     
+            if (Context.Request.IsHttps && resolved.StartsWith("http://", StringComparison.OrdinalIgnoreCase))
+            {
+                var preferLocal = Norm(item.FotoPrincipal);
+                resolved = !string.IsNullOrEmpty(preferLocal) ? preferLocal : "/images/default.png";
+            }
+
+         
+            var src = ToSrc(resolved);
+
+            var detalleUrl = Url.Action("Detalle", "Propiedad", new { codigo = item.Codigo });
+
+            <div class="col">
+                <div class="card h-100 shadow-lg border-0 rounded-4 propiedad-card" data-detalle="@detalleUrl" style="cursor:pointer;">
+                    <img src="@src"
+                         alt="Imagen @item.Codigo"
+                         class="img-fluid rounded-top"
+                         style="height:200px;object-fit:cover;"
+                         loading="eager"
+                         decoding="async"
+                         onerror="this.onerror=null;this.src='@Url.Content("~/images/default.png")';" />
+
+                    <div class="card-body p-3 pb-2">
+                        <h6 class="card-title fw-semibold text-truncate">@item.Tipo - @item.Ubicacion</h6>
+                        <p class="mb-1 small"><strong>@item.TipoVenta:</strong> US$ @item.Precio.ToString("N2")</p>
+                        <p class="mb-2 text-muted small">Código: @item.Codigo</p>
+                        <div class="d-flex justify-content-between align-items-center small text-muted mb-2">
+                            <span>🛏 @item.Habitaciones</span>
+                            <span>🛁 @item.Banos</span>
+                            <span>📐 @((item.MetrosCuadrados > 0 ? item.MetrosCuadrados : item.Metros)) m²</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

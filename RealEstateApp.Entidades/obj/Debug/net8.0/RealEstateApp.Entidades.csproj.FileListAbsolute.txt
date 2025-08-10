@@ -1,0 +1,55 @@
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Entidades\bin\Debug\net8.0\RealEstateApp.Entidades.deps.json
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Entidades\bin\Debug\net8.0\RealEstateApp.Entidades.dll
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Entidades\bin\Debug\net8.0\RealEstateApp.Entidades.pdb
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.AssemblyInfoInputs.cache
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.AssemblyInfo.cs
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.dll
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\refint\RealEstateApp.Entidades.dll
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.pdb
+C:\Users\Andres Lopez\source\repos\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\ref\RealEstateApp.Entidades.dll
+D:\ssss\vs.zipppp\RealEstateApp.Entidades\bin\Debug\net8.0\RealEstateApp.Entidades.deps.json
+D:\ssss\vs.zipppp\RealEstateApp.Entidades\bin\Debug\net8.0\RealEstateApp.Entidades.dll
+D:\ssss\vs.zipppp\RealEstateApp.Entidades\bin\Debug\net8.0\RealEstateApp.Entidades.pdb
+D:\ssss\vs.zipppp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.GeneratedMSBuildEditorConfig.editorconfig
+D:\ssss\vs.zipppp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.AssemblyInfoInputs.cache
+D:\ssss\vs.zipppp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.AssemblyInfo.cs
+D:\ssss\vs.zipppp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.csproj.CoreCompileInputs.cache
+D:\ssss\vs.zipppp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.dll
+D:\ssss\vs.zipppp\RealEstateApp.Entidades\obj\Debug\net8.0\refint\RealEstateApp.Entidades.dll
+D:\ssss\vs.zipppp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.pdb
+D:\ssss\vs.zipppp\RealEstateApp.Entidades\obj\Debug\net8.0\ref\RealEstateApp.Entidades.dll
+D:\aaaaa\RealEstateApp\RealEstateApp.Entidades\bin\Debug\net8.0\RealEstateApp.Entidades.deps.json
+D:\aaaaa\RealEstateApp\RealEstateApp.Entidades\bin\Debug\net8.0\RealEstateApp.Entidades.dll
+D:\aaaaa\RealEstateApp\RealEstateApp.Entidades\bin\Debug\net8.0\RealEstateApp.Entidades.pdb
+D:\aaaaa\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.GeneratedMSBuildEditorConfig.editorconfig
+D:\aaaaa\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.AssemblyInfoInputs.cache
+D:\aaaaa\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.AssemblyInfo.cs
+D:\aaaaa\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.csproj.CoreCompileInputs.cache
+D:\aaaaa\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.dll
+D:\aaaaa\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\refint\RealEstateApp.Entidades.dll
+D:\aaaaa\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.pdb
+D:\aaaaa\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\ref\RealEstateApp.Entidades.dll
+D:\ssssss\RealEstateApp.Entidades\bin\Debug\net8.0\RealEstateApp.Entidades.deps.json
+D:\ssssss\RealEstateApp.Entidades\bin\Debug\net8.0\RealEstateApp.Entidades.dll
+D:\ssssss\RealEstateApp.Entidades\bin\Debug\net8.0\RealEstateApp.Entidades.pdb
+D:\ssssss\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.GeneratedMSBuildEditorConfig.editorconfig
+D:\ssssss\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.AssemblyInfoInputs.cache
+D:\ssssss\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.AssemblyInfo.cs
+D:\ssssss\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.csproj.CoreCompileInputs.cache
+D:\ssssss\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.dll
+D:\ssssss\RealEstateApp.Entidades\obj\Debug\net8.0\refint\RealEstateApp.Entidades.dll
+D:\ssssss\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.pdb
+D:\ssssss\RealEstateApp.Entidades\obj\Debug\net8.0\ref\RealEstateApp.Entidades.dll
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Entidades\bin\Debug\net8.0\RealEstateApp.Entidades.deps.json
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Entidades\bin\Debug\net8.0\RealEstateApp.Entidades.dll
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Entidades\bin\Debug\net8.0\RealEstateApp.Entidades.pdb
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.GeneratedMSBuildEditorConfig.editorconfig
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.AssemblyInfoInputs.cache
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.AssemblyInfo.cs
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.csproj.CoreCompileInputs.cache
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.dll
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\refint\RealEstateApp.Entidades.dll
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\RealEstateApp.Entidades.pdb
+D:\saasdasdasdada\RealEstateApp\RealEstateApp.Entidades\obj\Debug\net8.0\ref\RealEstateApp.Entidades.dll

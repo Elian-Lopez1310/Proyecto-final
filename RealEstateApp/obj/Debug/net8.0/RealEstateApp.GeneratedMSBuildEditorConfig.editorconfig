@@ -1,0 +1,149 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RealEstateApp
+build_property.RootNamespace = RealEstateApp
+build_property.ProjectDir = D:\saasdasdasdada\RealEstateApp\RealEstateApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\saasdasdasdada\RealEstateApp\RealEstateApp
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Agente/ChatCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRlXENoYXRDbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Agente/Chats.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRlXENoYXRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Agente/EditarPerfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRlXEVkaXRhclBlcmZpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Agente/HomeAgente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRlXEhvbWVBZ2VudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Agente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Agente/ListaClientesChat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRlXExpc3RhQ2xpZW50ZXNDaGF0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Agente/ListaClientesOfertas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRlXExpc3RhQ2xpZW50ZXNPZmVydGFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Agente/Ofertas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRlXE9mZXJ0YXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Agente/OfertasCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRlXE9mZXJ0YXNDbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Agente/OfertasDelCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRlXE9mZXJ0YXNEZWxDbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Agente/Perfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRlXFBlcmZpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Agente/PropiedadesDelAgente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRlXFByb3BpZWRhZGVzRGVsQWdlbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Chat/EnviarMensaje.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxFbnZpYXJNZW5zYWplLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Cliente/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxEZXRhbGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Cliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Cliente/MisPropiedades.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxNaXNQcm9waWVkYWRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Cliente/_GridPropiedades.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxfR3JpZFByb3BpZWRhZGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Cuenta/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Cuenta/Registro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhXFJlZ2lzdHJvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Home/_GridPropiedades.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfR3JpZFByb3BpZWRhZGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Propiedad/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGllZGFkXERldGFsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Propiedad/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGllZGFkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Propiedad/Publicar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGllZGFkXFB1YmxpY2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Shared/_CardsPropiedades.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJkc1Byb3BpZWRhZGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Shared/_LayoutAgente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZ2VudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Shared/_LayoutCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/saasdasdasdada/RealEstateApp/RealEstateApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-72jowlv5ey

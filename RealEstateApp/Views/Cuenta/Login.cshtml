@@ -1,0 +1,75 @@
+﻿@model RealEstateApp.Web.ViewModels.LoginViewModel
+
+@{
+    ViewData["Title"] = "Iniciar Sesión";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-header text-white text-center bg-primary">
+                    <h4 class="mb-0">🔐 Iniciar Sesión</h4>
+                </div>
+                <div class="card-body px-4">
+                    <div id="alertaAjax"></div>
+
+                    <form id="formLogin" method="post" class="needs-validation" novalidate>
+                        @Html.AntiForgeryToken()
+
+                        <div class="mb-3">
+                            <label asp-for="Correo" class="form-label">Correo electrónico</label>
+                            <input asp-for="Correo" name="Correo" type="email" class="form-control form-control-lg" placeholder="correo@email.com" required />
+                            <span asp-validation-for="Correo" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Clave" class="form-label">Contraseña</label>
+                            <input asp-for="Clave" name="Clave" type="password" class="form-control form-control-lg" placeholder="********" required />
+                            <span asp-validation-for="Clave" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                🔓 Entrar
+                            </button>
+                        </div>
+                    </form>
+
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.querySelector('#formLogin').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const formData = new FormData(form);
+
+            const response = await fetch('/Cuenta/Login', {
+                method: 'POST',
+                body: formData
+            });
+
+            const result = await response.json();
+            console.log("LOGIN RESULT =>", result);
+
+            const alerta = document.getElementById('alertaAjax');
+
+            if (result.success) {
+                alerta.innerHTML = `<div class="alert alert-success text-center fw-bold">${result.message || "✅ Cuenta ingresada con éxito"}</div>`;
+                setTimeout(() => {
+                    window.location.href = result.redirectUrl || "/Home/Index"; 
+                }, 1000);
+            } else {
+                alerta.innerHTML = `<div class="alert alert-danger text-center fw-bold">${result.message || "❌ Error al iniciar sesión."}</div>`;
+            }
+        });
+    </script>
+}

@@ -1,0 +1,62 @@
+﻿@using RealEstateApp.Shared.Dtos
+@model List<PropiedadDto>  
+
+
+@{
+    ViewData["Title"] = "Propiedades Disponibles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="mt-4 mb-4 text-center">🏡 Propiedades Disponibles</h2>
+
+
+<form method="get" asp-action="Index" class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4">
+    <input type="text" name="codigo" class="form-control" placeholder="Código" style="width: 150px;" value="@Context.Request.Query["codigo"]" />
+
+    <select name="tipo" class="form-select" style="width: 150px;">
+        <option value="Todos">Todos</option>
+        <option value="Venta" selected="@((string)Context.Request.Query["tipo"] == "Venta")">Venta</option>
+        <option value="Alquiler" selected="@((string)Context.Request.Query["tipo"] == "Alquiler")">Alquiler</option>
+    </select>
+
+    <input type="number" name="habitaciones" class="form-control" placeholder="Habitaciones" style="width: 150px;" value="@Context.Request.Query["habitaciones"]" />
+
+    <input type="number" name="banos" class="form-control" placeholder="Baños" style="width: 150px;" value="@Context.Request.Query["banos"]" />
+
+    <button type="submit" class="btn btn-primary">
+        🔍 Filtrar
+    </button>
+</form>
+
+
+@if (Model != null && Model.Any())
+{
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        @foreach (var propiedad in Model)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="@(propiedad.Imagenes?.FirstOrDefault() ?? "/imagenes/default.jpg")" class="card-img-top" alt="Imagen propiedad" />
+
+                    <div class="card-body">
+                        <h5 class="card-title">@propiedad.Titulo - @propiedad.Ubicacion</h5>
+                        <p><strong>@propiedad.TipoVenta:</strong> US$ @propiedad.Precio.ToString("N2")</p>
+                        <p class="card-text">@propiedad.Descripcion?.Substring(0, Math.Min(100, propiedad.Descripcion.Length))...</p>
+                        <p><strong>Código:</strong> @propiedad.Codigo</p>
+                        <a asp-controller="Propiedad" asp-action="Detalle" asp-route-codigo="@propiedad.Codigo" class="btn btn-outline-primary">Ver Detalle</a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between small text-muted">
+                        <span>🛏 @propiedad.Habitaciones</span>
+                        <span>🛁 @propiedad.Banos</span>
+                        <span>📐 @propiedad.MetrosCuadrados m²</span>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="alert alert-warning text-center">No se encontraron propiedades con los filtros seleccionados.</div>
+
+}

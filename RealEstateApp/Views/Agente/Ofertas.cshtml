@@ -1,0 +1,33 @@
+﻿@model RealEstateApp.Web.ViewModels.AgenteOfertasListaVM
+@{
+    ViewData["Title"] = "Ofertas";
+    Layout = "~/Views/Shared/_LayoutAgente.cshtml";
+}
+<div class="container mt-4">
+    <h3>💵 Ofertas · Propiedad @Model.CodigoPropiedad</h3>
+
+    @if (Model.Clientes == null || !Model.Clientes.Any())
+    {
+        <div class="alert alert-info mt-3">No hay ofertas todavía.</div>
+    }
+    else
+    {
+        <div class="list-group mt-3">
+            @foreach (var c in Model.Clientes)
+            {
+                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                   href="@Url.Action("OfertasCliente", "AgentePropiedad", new { propiedadId = Model.PropiedadId, clienteId = c.ClienteId })">
+                    <div>
+                        <strong>@(string.IsNullOrWhiteSpace(c.NombreCliente) ? c.ClienteNombre : c.NombreCliente)</strong>
+                        <div class="small text-muted">
+                            Ofertas: @c.CantOfertas · Última: @c.UltEstado
+                        </div>
+                    </div>
+                    <span class="badge bg-secondary">
+                        @(c.UltFecha?.ToString("dd/MM/yyyy HH:mm") ?? "-")
+                    </span>
+                </a>
+            }
+        </div>
+    }
+</div>
